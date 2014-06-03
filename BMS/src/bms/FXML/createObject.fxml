@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.CreateNewObject">
+<children><TabPane layoutY="25.0" prefHeight="525.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE">
+  <tabs>
+    <Tab text="Паспортні дані">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><Label layoutX="24.0" layoutY="26.0" text="Назва*">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font></Label><TextField fx:id="idBridgeName" layoutX="239.0" layoutY="23.0" prefHeight="25.0" prefWidth="182.0" /><Label layoutX="24.0" layoutY="92.0" text="Крегорія дороги*">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Label layoutX="24.0" layoutY="58.0" text="Перешкода">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><ComboBox fx:id="idCategory" layoutX="239.0" layoutY="89.0" prefHeight="25.0" prefWidth="181.0" promptText="обрати категорію" /><TextField fx:id="idBarrier" layoutX="239.0" layoutY="55.0" prefHeight="25.0" prefWidth="182.0" /><Label layoutX="24.0" layoutY="129.0" text="Кількість смуг руху">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><ComboBox fx:id="idLines" layoutX="239.0" layoutY="126.0" prefHeight="25.0" prefWidth="180.0" promptText="1" /><Label layoutX="24.0" layoutY="163.0" text="Найближчий населений пункт">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><TextField fx:id="idLocality" layoutX="239.0" layoutY="160.0" prefHeight="25.0" prefWidth="180.0" /><Label layoutX="24.0" layoutY="193.0" text="Відстань до нього">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><TextField fx:id="idDistance" layoutX="239.0" layoutY="191.0" prefHeight="25.0" prefWidth="178.0" /><Label layoutX="24.0" layoutY="227.0" text="Рік вводу в експлуатацію*">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><ComboBox fx:id="idInput" layoutX="239.0" layoutY="224.0" prefHeight="25.0" prefWidth="179.0" promptText="1950" /><Label layoutX="21.0" layoutY="264.0" text="Будівельна компанія">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><TextField fx:id="idCompany" layoutX="239.0" layoutY="261.0" prefHeight="25.0" prefWidth="178.0" /><Label layoutX="24.0" layoutY="298.0" text="Закінчення експлуатації*">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Label layoutX="24.0" layoutY="331.0" text="Рік останнього огляду">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Label fx:id="idPic" layoutX="23.0" layoutY="364.0" text="Зображення">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><ComboBox fx:id="idLifetime" layoutX="239.0" layoutY="295.0" prefHeight="25.0" prefWidth="179.0" promptText="1950" /><ComboBox fx:id="idRepair" layoutX="240.0" layoutY="328.0" prefHeight="25.0" prefWidth="179.0" promptText="1950" /><Separator layoutX="22.0" layoutY="438.0" prefHeight="9.0" prefWidth="658.0" /><Label layoutX="24.0" layoutY="447.0" text="* - поля обов'язкові для заповнення ">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Button fx:id="idReadyPasport" layoutX="22.0" layoutY="405.0" mnemonicParsing="false" onAction="#BlockPasportData" prefHeight="33.0" prefWidth="132.0" text="Готово" /><Button fx:id="idEditPasport" layoutX="171.0" layoutY="404.0" mnemonicParsing="false" onAction="#ReleasePasportData" prefHeight="33.0" prefWidth="132.0" text="Редагувати" /><Button fx:id="idChooserPic" layoutX="237.0" layoutY="361.0" mnemonicParsing="false" onAction="#ChoosePic" prefHeight="31.0" prefWidth="181.0" text="Обрати зображення" /><Label layoutX="24.0" layoutY="466.0" text="** - поля обов'язкові для заповнення ">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+</children></AnchorPane>
+      </content>
+    </Tab>
+<Tab text="Технічні характеристики">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<Label layoutX="24.0" layoutY="26.0" text="Довжина">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<TextField fx:id="idLenght" layoutX="239.0" layoutY="23.0" prefHeight="25.0" prefWidth="182.0" />
+<Label layoutX="24.0" layoutY="92.0" text="Ширина лівого тротуару">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Label layoutX="24.0" layoutY="58.0" text="Ширина проїжджої частини">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<TextField fx:id="idRoadWidth" layoutX="239.0" layoutY="55.0" prefHeight="25.0" prefWidth="182.0" />
+<Label layoutX="24.0" layoutY="129.0" text="Ширина правого тротуару">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<ComboBox fx:id="idFence" layoutX="240.0" layoutY="160.0" prefHeight="25.0" prefWidth="180.0" promptText="0" />
+<Label layoutX="24.0" layoutY="163.0" text="Огорожа">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<TextField fx:id="idLeftWidth" layoutX="238.0" layoutY="89.0" prefHeight="25.0" prefWidth="180.0" />
+<Label layoutX="26.0" layoutY="229.0" text="Кут нахилу">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<TextField fx:id="idRightWidth" layoutX="239.0" layoutY="126.0" prefHeight="25.0" prefWidth="178.0" />
+<Label layoutX="22.0" layoutY="262.0" text="Вантажопідйомність*">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Label fx:id="idShema" layoutX="24.0" layoutY="295.0" text="Схема">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Label layoutX="14.0" layoutY="435.0" text="* - поля обов'язкові для заповнення">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Separator layoutX="14.0" layoutY="426.0" prefHeight="9.0" prefWidth="658.0" /><ComboBox fx:id="idWalkFence" layoutX="239.0" layoutY="190.0" prefHeight="25.0" prefWidth="180.0" promptText="0" /><TextField fx:id="idLoad" layoutX="238.0" layoutY="259.0" prefHeight="25.0" prefWidth="178.0" /><TextField fx:id="idAngle" layoutX="238.0" layoutY="226.0" prefHeight="25.0" prefWidth="178.0" /><Label layoutX="24.0" layoutY="193.0" text="Перила">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Button fx:id="idReadySpecification" layoutX="14.0" layoutY="387.0" mnemonicParsing="false" onAction="#BlockSpecification" prefHeight="33.0" prefWidth="132.0" text="Готово" /><Button fx:id="idEditSpecification" layoutX="163.0" layoutY="387.0" mnemonicParsing="false" onAction="#ReleaseSpecification" prefHeight="33.0" prefWidth="132.0" text="Редагувати" /><Label layoutX="13.0" layoutY="454.0" text="** - довжини/ваги задаються як цілі значення (мм/кг)">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Label layoutX="12.0" layoutY="473.0" text="*** - довжини/ваги задаються як цілі значення (мм/кг)">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Button fx:id="idChooserShema" layoutX="239.0" layoutY="292.0" mnemonicParsing="false" onAction="#ChoseeShema" prefHeight="32.0" prefWidth="176.0" text="Обрати схему" />
+</children>
+</AnchorPane>
+</content>
+</Tab>
+<Tab text="Мостове полотно">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+</content>
+</Tab>
+<Tab text="Прогонові споруди">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+</content>
+</Tab>
+<Tab text="Опори">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+</content>
+</Tab>
+<Tab text="Регуляційні споруди">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+</content>
+</Tab>
+  </tabs>
+</TabPane><MenuBar prefHeight="20.0" prefWidth="700.0">
+  <menus>
+    <Menu mnemonicParsing="false" text="File">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Close" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Edit">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Delete" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Help">
+      <items>
+        <MenuItem mnemonicParsing="false" text="About" />
+      </items>
+    </Menu>
+  </menus>
+</MenuBar>
+</children></AnchorPane>

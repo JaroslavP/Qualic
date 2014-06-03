@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.Controller">
+<children><MenuBar prefWidth="1000.0">
+  <menus>
+    <Menu mnemonicParsing="false" text="Об'кт">
+      <items>
+        <MenuItem fx:id="idNewBridge" mnemonicParsing="false" onAction="#createNewObject" text="Новий" />
+<MenuItem mnemonicParsing="false" text="Close" />
+<MenuItem mnemonicParsing="false" text="Close" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Вид">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Delete" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="База Днаних">
+      <items>
+        <MenuItem mnemonicParsing="false" onAction="#connectDB" text="Підключитись" />
+<MenuItem mnemonicParsing="false" onAction="#disconnectDB" text="Відключитись" />
+      </items>
+    </Menu>
+<Menu mnemonicParsing="false" text="?">
+<items>
+<MenuItem mnemonicParsing="false" text="About" />
+</items>
+</Menu>
+  </menus>
+</MenuBar><Pane fx:id="idToolbar" layoutY="25.0" prefHeight="34.0" prefWidth="1000.0" style="-fx-background-color: #D3D3D3;" /><Pane fx:id="idStaеtsPane" layoutY="678.0" prefHeight="17.0" prefWidth="1000.0" style="-fx-background-color: #D3D3D3;">
+<children><Label fx:id="idStaеtsString" layoutX="5.0" text="!: Відсутнє з'єднання з базою даних">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font></Label>
+</children></Pane>
+</children></AnchorPane>
