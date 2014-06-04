@@ -22,11 +22,11 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idCategory" layoutX="239.0" layoutY="89.0" prefHeight="25.0" prefWidth="181.0" promptText="обрати категорію" /><TextField fx:id="idBarrier" layoutX="239.0" layoutY="55.0" prefHeight="25.0" prefWidth="182.0" /><Label layoutX="24.0" layoutY="129.0" text="Кількість смуг руху">
+</Label><ComboBox fx:id="idCategory" layoutX="239.0" layoutY="89.0" prefHeight="25.0" prefWidth="181.0" promptText=" " /><TextField fx:id="idBarrier" layoutX="239.0" layoutY="55.0" prefHeight="25.0" prefWidth="182.0" /><Label layoutX="24.0" layoutY="129.0" text="Кількість смуг руху">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idLines" layoutX="239.0" layoutY="126.0" prefHeight="25.0" prefWidth="180.0" promptText="1" /><Label layoutX="24.0" layoutY="163.0" text="Найближчий населений пункт">
+</Label><ComboBox fx:id="idLines" layoutX="239.0" layoutY="126.0" prefHeight="25.0" prefWidth="180.0" /><Label layoutX="24.0" layoutY="163.0" text="Найближчий населений пункт">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -38,7 +38,7 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idInput" layoutX="239.0" layoutY="224.0" prefHeight="25.0" prefWidth="179.0" promptText="1950" /><Label layoutX="21.0" layoutY="264.0" text="Будівельна компанія">
+</Label><ComboBox fx:id="idInput" layoutX="239.0" layoutY="224.0" prefHeight="25.0" prefWidth="179.0" /><Label layoutX="21.0" layoutY="264.0" text="Будівельна компанія">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -54,7 +54,7 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idLifetime" layoutX="239.0" layoutY="295.0" prefHeight="25.0" prefWidth="179.0" promptText="1950" /><ComboBox fx:id="idRepair" layoutX="240.0" layoutY="328.0" prefHeight="25.0" prefWidth="179.0" promptText="1950" /><Separator layoutX="22.0" layoutY="438.0" prefHeight="9.0" prefWidth="658.0" /><Label layoutX="24.0" layoutY="447.0" text="* - поля обов'язкові для заповнення ">
+</Label><ComboBox fx:id="idLifetime" layoutX="239.0" layoutY="295.0" prefHeight="25.0" prefWidth="179.0" /><ComboBox fx:id="idRepair" layoutX="240.0" layoutY="328.0" prefHeight="25.0" prefWidth="179.0" /><Separator layoutX="22.0" layoutY="438.0" prefHeight="9.0" prefWidth="658.0" /><Label layoutX="24.0" layoutY="447.0" text="* - поля обов'язкові для заповнення ">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -110,7 +110,7 @@
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idShema" layoutX="24.0" layoutY="295.0" text="Схема">
+<Label fx:id="idShema" layoutX="22.0" layoutY="330.0" text="Схема">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -130,49 +130,266 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Button fx:id="idChooserShema" layoutX="239.0" layoutY="292.0" mnemonicParsing="false" onAction="#ChoseeShema" prefHeight="32.0" prefWidth="176.0" text="Обрати схему" />
+</Label><Button fx:id="idChooserShema" layoutX="239.0" layoutY="324.0" mnemonicParsing="false" onAction="#ChoseeShema" prefHeight="32.0" prefWidth="176.0" text="Обрати схему" /><Label layoutX="22.0" layoutY="293.0" text="Фактична вантажопідйомність*">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><TextField fx:id="idFLoad" layoutX="240.0" layoutY="290.0" prefHeight="25.0" prefWidth="178.0" />
 </children>
 </AnchorPane>
 </content>
 </Tab>
 <Tab text="Мостове полотно">
 <content>
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><Accordion layoutX="26.0" layoutY="24.0" prefHeight="300.0" prefWidth="648.0">
+  <panes>
+    <TitledPane animated="false" prefHeight="200.0" prefWidth="648.0" text="Покриття">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="648.0">
+<children><ComboBox layoutX="365.0" layoutY="10.0" prefHeight="25.0" prefWidth="175.0" /><Label layoutX="14.0048828125" layoutY="14.0" text="Колійність вздовж бордюрів">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font></Label><Label layoutX="14.0" layoutY="52.0" text="Напливи біля бордюрів">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label><Label layoutX="14.0" layoutY="90.0" text="Вибоїни і ями в покритті завглибшки до Х см площею">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label><Label layoutX="14.0" layoutY="106.0" text="Y % від загальної площі проїздної частини">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label><Label layoutX="14.0" layoutY="139.0" text="При в'їзді на міст">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label><ComboBox fx:id="idKoliynist" layoutX="365.0" layoutY="10.0" prefHeight="25.0" prefWidth="175.0" /><ComboBox fx:id="idNapluvy" layoutX="365.0" layoutY="48.0" prefHeight="25.0" prefWidth="175.0" /><ComboBox fx:id="idDamage" layoutX="365.0" layoutY="94.0" prefHeight="25.0" prefWidth="175.0" /><ComboBox fx:id="idVizd" layoutX="365.0" layoutY="135.0" prefHeight="25.0" prefWidth="175.0" />
+</children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" prefHeight="200.0" prefWidth="648.0" text="Система водовідведення">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="648.0">
+<children><CheckBox fx:id="SV1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Недостатня довжина водовідвідних трубок" /><CheckBox fx:id="SV2" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" text="Засміченість воовідвідних трубок" /><CheckBox fx:id="SV3" layoutX="14.0" layoutY="64.0" mnemonicParsing="false" text="Застой води на проїздній частині" /><CheckBox fx:id="SV4" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" text="Руйнування водовідвідного лотка" /><CheckBox fx:id="SV5" layoutX="14.0" layoutY="117.0" mnemonicParsing="false" text="Значна корозія водовідвідних трубок" />
+</children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" prefHeight="200.0" prefWidth="648.0" text="Деформаційні шви">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><CheckBox fx:id="DH1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Пошкодження елементів деформаційних швів" /><CheckBox fx:id="DH2" layoutX="14.0" layoutY="38.0" mnemonicParsing="false" text="Тріщи в покритті над деформаційними швами" /><CheckBox fx:id="DH3" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" text="Відсутність деформаційних швів на тротуарах" /><CheckBox fx:id="DH5" layoutX="14.0" layoutY="115.0" mnemonicParsing="false" text="Значне руйнування деормаційних швів" /><CheckBox fx:id="DH4" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" text="Розладнання деформаційних швів" />
+</children></AnchorPane>
+      </content>
+    </TitledPane>
+<TitledPane animated="false" layoutX="10.0" layoutY="60.0" prefHeight="200.0" prefWidth="648.0" text="Огорожі">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><CheckBox fx:id="O1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Лущення фарби" /><CheckBox fx:id="O2" layoutX="14.0" layoutY="44.0" mnemonicParsing="false" text="Погнутість, відсутність болтів секцій металевої огорожі" /><CheckBox fx:id="O4" layoutX="14.0" layoutY="103.0" mnemonicParsing="false" text="Відрив стояків бар'єрної огорожі" /><CheckBox fx:id="O3" layoutX="14.0" layoutY="73.0" mnemonicParsing="false" text="Пошкодження бар'єрної огорожі (корозія бетону і арматури)" />
+</children>
+</AnchorPane>
+</content>
+</TitledPane>
+<TitledPane animated="false" layoutX="10.0" layoutY="85.0" prefHeight="200.0" prefWidth="648.0" text="Трогтуари">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><CheckBox fx:id="T1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Тріщини в покритті на стиких тротуарних плит з рокриттям до 5мм" /><CheckBox fx:id="T2" layoutX="14.0" layoutY="46.0" mnemonicParsing="false" text="Руйнування покриття" /><CheckBox fx:id="T3" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" text="Оголення і корозія арматури" /><CheckBox fx:id="T4" layoutX="14.0" layoutY="108.0" mnemonicParsing="false" text="Проломи тротуарних плит" />
+</children>
+</AnchorPane>
+</content>
+</TitledPane>
+  </panes>
+</Accordion><Button layoutX="22.0" layoutY="404.0" mnemonicParsing="false" onAction="#blockDeck" prefHeight="33.0" prefWidth="132.0" text="Готово" /><Button layoutX="171.0" layoutY="404.0" mnemonicParsing="false" onAction="#ReleaseDeck" prefHeight="33.0" prefWidth="132.0" text="Редагувати" /><Separator layoutX="26.0" layoutY="447.5" prefWidth="648.0" />
+</children></AnchorPane>
 </content>
 </Tab>
 <Tab text="Прогонові споруди">
 <content>
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<Label layoutX="24.0" layoutY="28.0" text="Тріщини у розтягнутому бетоні з розкриттям">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Label layoutX="24.0" layoutY="85.0" text="з розкриттям">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Label layoutX="23.0" layoutY="69.0" text="Силові тріщини в стисненій зоні бетону ">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Label layoutX="26.0" layoutY="120.0" text="Корозія поверхні балок не перевищує">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<ComboBox fx:id="ss1" layoutX="363.0" layoutY="25.0" prefHeight="25.0" prefWidth="180.0" />
+<Separator layoutX="14.0" layoutY="447.0" prefHeight="9.0" prefWidth="658.0" />
+<Button layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#blockSuper" prefHeight="33.0" prefWidth="132.0" text="Готово" />
+<Button layoutX="160.0" layoutY="404.0" mnemonicParsing="false" onAction="#ReleaseSuper" prefHeight="33.0" prefWidth="132.0" text="Редагувати" />
+<ComboBox fx:id="ss2" layoutX="363.0" layoutY="73.0" prefHeight="25.0" prefWidth="180.0" />
+<ComboBox fx:id="ss3" layoutX="363.0" layoutY="117.0" prefHeight="25.0" prefWidth="180.0" /><CheckBox fx:id="ss4" layoutX="32.0" layoutY="164.0" mnemonicParsing="false" text="Пошкодження антикорозійного покриття; тріщини, міхурі, злущення">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font></CheckBox><CheckBox fx:id="ss5" layoutX="32.0" layoutY="197.0" mnemonicParsing="false" text="Розірвані шви зварювання у вузлах з'єднання">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</CheckBox><CheckBox fx:id="ss6" layoutX="32.0" layoutY="233.0" mnemonicParsing="false" text="Місцеві погнутості балок">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</CheckBox><CheckBox fx:id="ss7" layoutX="31.0" layoutY="266.0" mnemonicParsing="false" text="Залишкокі прогини балок">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</CheckBox><CheckBox fx:id="ss8" layoutX="30.0" layoutY="298.0" mnemonicParsing="false" text="Залишкокі прогини балок">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</CheckBox><CheckBox fx:id="ss9" layoutX="30.0" layoutY="331.0" mnemonicParsing="false" text="Тріщини в болтах/гайках">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</CheckBox>
+</children>
+</AnchorPane>
 </content>
 </Tab>
 <Tab text="Опори">
 <content>
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<Accordion layoutX="26.0" layoutY="24.0" prefHeight="300.0" prefWidth="648.0">
+<panes>
+<TitledPane animated="false" prefHeight="200.0" prefWidth="648.0" text="Ригель">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="220.0" prefWidth="648.0">
+<children>
+<ComboBox layoutX="365.0" layoutY="10.0" prefHeight="25.0" prefWidth="175.0" />
+<Label layoutX="14.0" layoutY="52.0" text="Силові тріщини тіла ригелів">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label>
+<Label layoutX="14.0" layoutY="15.0" text="Суцільна сітка тріщин на поверхні з розкриттям Х">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label>
+<Label layoutX="14.0" layoutY="27.0" text="завдовжки Y">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label>
+<Label layoutX="14.0" layoutY="87.0" text="Водневий показник">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label>
+<ComboBox fx:id="Rg1" layoutX="365.0" layoutY="9.0" prefHeight="25.0" prefWidth="175.0" />
+<ComboBox fx:id="Rg2" layoutX="365.0" layoutY="48.0" prefHeight="25.0" prefWidth="175.0" />
+<ComboBox fx:id="Rg3" layoutX="365.0" layoutY="82.0" prefHeight="25.0" prefWidth="175.0" /><CheckBox fx:id="Rg4" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" text="Наявність нахелів ригеля">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font></CheckBox><CheckBox fx:id="Rg5" layoutX="14.0" layoutY="147.0" mnemonicParsing="false" text="Оголення та корозія арматури">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</CheckBox><CheckBox fx:id="Rg6" layoutX="14.0" layoutY="175.0" mnemonicParsing="false" text="Вивітрювання бетону на глибину до 10 мм">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</CheckBox>
+</children>
+</AnchorPane>
+</content>
+</TitledPane>
+<TitledPane animated="false" prefHeight="200.0" prefWidth="648.0" text="Тіло опори">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="648.0">
+<children>
+<CheckBox fx:id="to1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Пошкодження фарби на металевих деталях" />
+<CheckBox fx:id="to2" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" text="Корозія металу" />
+<CheckBox fx:id="to3" layoutX="14.0" layoutY="64.0" mnemonicParsing="false" text="Відсутність мастила на поверхнях тертя" />
+<CheckBox fx:id="to4" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" text="Сколювання бетону у валках частин опор" />
+<CheckBox fx:id="to5" layoutX="14.0" layoutY="117.0" mnemonicParsing="false" text="Зміщення опорних частин" /><CheckBox fx:id="to6" layoutX="14.0" layoutY="143.0" mnemonicParsing="false" text="Зменшення рухомості опорних частин" /><CheckBox fx:id="to7" layoutX="14.0" layoutY="168.0" mnemonicParsing="false" text="Руйнування елементів опорних частин" />
+</children>
+</AnchorPane>
+</content>
+</TitledPane>
+<TitledPane animated="false" prefHeight="200.0" prefWidth="648.0" text="Фундамент">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<CheckBox fx:id="f1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Осідання всіх частин фундаменту" />
+<CheckBox fx:id="f2" layoutX="14.0" layoutY="38.0" mnemonicParsing="false" text="Пошкодження підземної(підводної )частини фундаменту" />
+<CheckBox fx:id="f3" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" text="Відсутність деформаційних швів на тротуарах" />
+<CheckBox fx:id="f5" layoutX="14.0" layoutY="115.0" mnemonicParsing="false" text="Зміщення фундаменту призводять до зсуву прогоних будов" />
+<CheckBox fx:id="f4" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" text="Деформація поверхні в місці знаходження фундаменту" />
+</children>
+</AnchorPane>
+</content>
+</TitledPane>
+</panes>
+</Accordion>
+<Button layoutX="22.0" layoutY="404.0" mnemonicParsing="false" onAction="#blockSupport" prefHeight="33.0" prefWidth="132.0" text="Готово" />
+<Button layoutX="171.0" layoutY="404.0" mnemonicParsing="false" onAction="#ReleaseSupport" prefHeight="33.0" prefWidth="132.0" text="Редагувати" />
+<Separator layoutX="26.0" layoutY="447.5" prefWidth="648.0" />
+</children>
+</AnchorPane>
 </content>
 </Tab>
 <Tab text="Регуляційні споруди">
 <content>
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<Label layoutX="24.0" layoutY="28.0" text="Площа пошкоджень  кріплень підходів ">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Label layoutX="24.0" layoutY="85.0" text="глибину, з кроком">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Label layoutX="23.0" layoutY="69.0" text="Колії на поверхні покриття не первищують">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Label layoutX="26.0" layoutY="120.0" text="Пошкодження вимагають зниження">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<ComboBox fx:id="RS1" layoutX="330.0" layoutY="27.0" prefHeight="25.0" prefWidth="180.0" />
+<Label layoutX="26.0" layoutY="137.0" text="швидкості руху">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Separator layoutX="14.0" layoutY="447.0" prefHeight="9.0" prefWidth="658.0" />
+<Label layoutX="26.0" layoutY="171.0" text="Втрати тілом конуса об'єму сягає">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+<Button layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#blockRegulatoryStructure" prefHeight="33.0" prefWidth="132.0" text="Готово" />
+<Button layoutX="160.0" layoutY="404.0" mnemonicParsing="false" onAction="#ReleaseRegulatorystructure" prefHeight="33.0" prefWidth="132.0" text="Редагувати" /><ComboBox fx:id="RS2" layoutX="330.0" layoutY="71.0" prefHeight="25.0" prefWidth="180.0" /><ComboBox fx:id="RS4" layoutX="330.0" layoutY="167.0" prefHeight="25.0" prefWidth="180.0" /><ComboBox fx:id="RS3" layoutX="330.0" layoutY="119.0" prefHeight="25.0" prefWidth="180.0" />
+</children>
+</AnchorPane>
 </content>
 </Tab>
   </tabs>
-</TabPane><MenuBar prefHeight="20.0" prefWidth="700.0">
-  <menus>
-    <Menu mnemonicParsing="false" text="File">
-      <items>
-        <MenuItem mnemonicParsing="false" text="Close" />
-      </items>
-    </Menu>
-    <Menu mnemonicParsing="false" text="Edit">
-      <items>
-        <MenuItem mnemonicParsing="false" text="Delete" />
-      </items>
-    </Menu>
-    <Menu mnemonicParsing="false" text="Help">
-      <items>
-        <MenuItem mnemonicParsing="false" text="About" />
-      </items>
-    </Menu>
-  </menus>
-</MenuBar>
+</TabPane><Pane prefHeight="26.0" prefWidth="700.0" style="-fx-background-color: #E3E3E3;">
+<children><Button fx:id="createButton" layoutX="2.0" mnemonicParsing="false" onAction="#createBridge" text="Створити" /><Button fx:id="closeButton" layoutX="71.0" mnemonicParsing="false" onAction="#closeForm" text="Закрити" />
+</children></Pane>
 </children></AnchorPane>
