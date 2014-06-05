@@ -1,14 +1,23 @@
 package bms;
 
-/**
- * Created by computer on 05.06.2014.
- */
 public class Bridge {
+
     private Deck deck;
+    private SuperStructure superStructure;
+    private RegulatoryStructure regulatoryStructure;
+    private Support support;
+
+    public Bridge (Deck deckValue, SuperStructure ssValue,
+                   RegulatoryStructure rS, Support supp) {
+        deck = deckValue;
+        superStructure = ssValue;
+        regulatoryStructure = rS;
+        support = supp;
+
+    }
 
     public Deck getDeck() { return deck; }
-
-    public Bridge (Deck deckValue) {
-        deck = deckValue;
-    }
+    public SuperStructure getSuperStructure() { return superStructure; }
+    public RegulatoryStructure getRegulatoryStructure() { return regulatoryStructure; }
+    public Support getSupport() { return support; }
 }

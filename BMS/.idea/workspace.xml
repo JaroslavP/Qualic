@@ -61,28 +61,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Controller.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bms/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85714287" vertical-offset="374" max-vertical-offset="1275">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="717" max-vertical-offset="1122">
+              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1933#1934#0" expanded="true" />
+                <element signature="e#2004#2005#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateNewObject.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CreateNewObject.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bms/CreateNewObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2618" max-vertical-offset="5950">
-              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.74814814" vertical-offset="1142" max-vertical-offset="2108">
+              <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5636#5645#0" expanded="true" />
-                <element signature="e#7604#7605#0" expanded="true" />
-                <element signature="e#7671#7672#0" expanded="true" />
+                <element signature="method#initialize#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="e#3579#3588#0" expanded="true" />
+                <element signature="method#makeDeck#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#makeSuperStructure#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#makeSupport#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#makeRS#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#ChoosePic#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#ChoseeShema#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#BlockPasportData#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#ReleasePasportData#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#BlockSpecification#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#ReleaseSpecification#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#blockDeck#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#ReleaseDeck#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#blockSuper#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#ReleaseSuper#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#blockSupport#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#ReleaseSupport#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#blockRegulatoryStructure#0;class#CreateNewObject#0" expanded="false" />
+                <element signature="method#ReleaseRegulatorystructure#0;class#CreateNewObject#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -91,12 +108,9 @@
       <file leaf-file-name="Bridge.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bms/Bridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#217#218#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,19 +134,22 @@
         <option value="$PROJECT_DIR$/fxml/bms.fxml" />
         <option value="$PROJECT_DIR$/src/bms/connectionWindow.fxml" />
         <option value="$PROJECT_DIR$/src/bms/FXML/connectionWindow.fxml" />
-        <option value="$PROJECT_DIR$/src/bms/FXML/main.fxml" />
         <option value="$PROJECT_DIR$/src/bms/ConnectionController.java" />
         <option value="$PROJECT_DIR$/src/bms/Inicializable.java" />
         <option value="$PROJECT_DIR$/src/bms/FXML/Deck.java" />
         <option value="$PROJECT_DIR$/src/bms/rating.java" />
         <option value="$PROJECT_DIR$/src/bms/Rating.java" />
-        <option value="$PROJECT_DIR$/src/bms/FXML/createObject.fxml" />
         <option value="$PROJECT_DIR$/src/bms/Main.java" />
         <option value="$PROJECT_DIR$/src/bms/MakeBridge.java" />
+        <option value="$PROJECT_DIR$/src/bms/FXML/main.fxml" />
+        <option value="$PROJECT_DIR$/src/bms/FXML/createObject.fxml" />
+        <option value="$PROJECT_DIR$/src/bms/SuperStructure.java" />
         <option value="$PROJECT_DIR$/src/bms/Deck.java" />
-        <option value="$PROJECT_DIR$/src/bms/CreateNewObject.java" />
+        <option value="$PROJECT_DIR$/src/bms/RegulatoryStructure.java" />
+        <option value="$PROJECT_DIR$/src/bms/Support.java" />
         <option value="$PROJECT_DIR$/src/bms/Bridge.java" />
         <option value="$PROJECT_DIR$/src/bms/Controller.java" />
+        <option value="$PROJECT_DIR$/src/bms/CreateNewObject.java" />
       </list>
     </option>
   </component>
@@ -571,22 +588,23 @@
       <workItem from="1401872274657" duration="13781000" />
       <workItem from="1401899414448" duration="6857000" />
       <workItem from="1401923631873" duration="6887000" />
+      <workItem from="1401962669871" duration="6347000" />
+      <workItem from="1401974613907" duration="5079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61398000" />
+    <option name="totallyTimeSpent" value="72824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39968652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -602,12 +620,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32445142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32445142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -630,15 +649,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/bms/Controller.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -646,32 +657,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bms/FXML/createObject.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3856" max-vertical-offset="6817">
-          <caret line="233" column="76" selection-start-line="233" selection-start-column="76" selection-end-line="233" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="1122">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bms/ConnectionController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="731">
@@ -685,10 +670,26 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="3587">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5636#5645#0" expanded="true" />
-            <element signature="e#7604#7605#0" expanded="true" />
-            <element signature="e#7671#7672#0" expanded="true" />
+            <element signature="method#initialize#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="e#3579#3588#0" expanded="true" />
+            <element signature="method#makeDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeSuperStructure#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeRS#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ChoosePic#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ChoseeShema#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#BlockPasportData#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleasePasportData#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#BlockSpecification#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSpecification#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockSuper#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSuper#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockRegulatoryStructure#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseRegulatorystructure#0;class#CreateNewObject#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -697,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
           <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,7 +713,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1156">
           <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -724,10 +724,26 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1958" max-vertical-offset="2363">
           <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5636#5645#0" expanded="true" />
-            <element signature="e#7604#7605#0" expanded="true" />
-            <element signature="e#7671#7672#0" expanded="true" />
+            <element signature="method#initialize#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="e#3579#3588#0" expanded="true" />
+            <element signature="method#makeDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeSuperStructure#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeRS#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ChoosePic#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ChoseeShema#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#BlockPasportData#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleasePasportData#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#BlockSpecification#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSpecification#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockSuper#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSuper#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockRegulatoryStructure#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseRegulatorystructure#0;class#CreateNewObject#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -751,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="544">
           <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +775,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="188" max-vertical-offset="1122">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -770,10 +786,26 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1312" max-vertical-offset="1717">
           <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5636#5645#0" expanded="true" />
-            <element signature="e#7604#7605#0" expanded="true" />
-            <element signature="e#7671#7672#0" expanded="true" />
+            <element signature="method#initialize#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="e#3579#3588#0" expanded="true" />
+            <element signature="method#makeDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeSuperStructure#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeRS#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ChoosePic#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ChoseeShema#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#BlockPasportData#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleasePasportData#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#BlockSpecification#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSpecification#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockSuper#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSuper#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockRegulatoryStructure#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseRegulatorystructure#0;class#CreateNewObject#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -790,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="510">
           <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -799,7 +830,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="833">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -816,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="476">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -825,7 +856,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -850,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="476">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,7 +890,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -868,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="408">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,7 +908,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -886,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="408">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +926,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -904,7 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <caret line="12" column="77" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +944,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -922,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +962,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,35 +997,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/FXML/main.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16621253" vertical-offset="432" max-vertical-offset="799">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/FXML/createObject.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3856" max-vertical-offset="6817">
-          <caret line="233" column="76" selection-start-line="233" selection-start-column="76" selection-end-line="233" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bms/Rating.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37777779" vertical-offset="0" max-vertical-offset="405">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5920398" vertical-offset="0" max-vertical-offset="408">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2159" max-vertical-offset="6715">
           <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2975">
           <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,8 +1039,8 @@
         <state vertical-scroll-proportion="0.38390094" vertical-offset="91965" max-vertical-offset="94418">
           <caret line="6038" column="44" selection-start-line="6038" selection-start-column="44" selection-end-line="6038" selection-end-column="44" />
           <folding>
-            <element signature="e#63147#63148#0" expanded="true" />
-            <element signature="e#63193#63194#0" expanded="true" />
+            <element signature="e#63147#63148#0" expanded="false" />
+            <element signature="e#63193#63194#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1044,39 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61904764" vertical-offset="2516" max-vertical-offset="2873">
           <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/CreateNewObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2618" max-vertical-offset="5950">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5636#5645#0" expanded="true" />
-            <element signature="e#7604#7605#0" expanded="true" />
-            <element signature="e#7671#7672#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Deck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29411766" vertical-offset="14" max-vertical-offset="391">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Bridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1088,12 +1060,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5012346" vertical-offset="1" max-vertical-offset="408">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/FXML/main.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51771116" vertical-offset="82" max-vertical-offset="1054">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/FXML/createObject.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47959185" vertical-offset="6425" max-vertical-offset="6817">
+          <caret line="389" column="6" selection-start-line="389" selection-start-column="6" selection-end-line="389" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/SuperStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08395062" vertical-offset="0" max-vertical-offset="527">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Deck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16790123" vertical-offset="0" max-vertical-offset="408">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/RegulatoryStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.67160493" vertical-offset="0" max-vertical-offset="405">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Support.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04197531" vertical-offset="0" max-vertical-offset="405">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Bridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bms/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85714287" vertical-offset="374" max-vertical-offset="1275">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="717" max-vertical-offset="1122">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1933#1934#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/CreateNewObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74814814" vertical-offset="1142" max-vertical-offset="2108">
+          <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
+          <folding>
+            <element signature="method#initialize#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="e#3579#3588#0" expanded="true" />
+            <element signature="method#makeDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeSuperStructure#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#makeRS#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ChoosePic#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ChoseeShema#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#BlockPasportData#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleasePasportData#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#BlockSpecification#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSpecification#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseDeck#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockSuper#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSuper#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseSupport#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#blockRegulatoryStructure#0;class#CreateNewObject#0" expanded="false" />
+            <element signature="method#ReleaseRegulatorystructure#0;class#CreateNewObject#0" expanded="false" />
           </folding>
         </state>
       </provider>

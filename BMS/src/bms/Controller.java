@@ -1,5 +1,6 @@
 package bms;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -25,8 +26,6 @@ public class Controller {
         stage.setTitle("Новий міст");
         stage.setScene(new Scene(root, 690, 540));
         stage.setResizable(false);
-        bridge = new Bridge(new Deck(0,0,0,0,0));
-        CreateNewObject.bbb = bridge;
         stage.show();
     }
 
@@ -54,16 +53,19 @@ public class Controller {
         }
     }
 
-    public void createBridge () {
-        double ddd= bridge.getDeck().coating;
-        qqq.setText(String.valueOf(ddd));
+    public static void createBridge() {
+        //qqq.setText(String.valueOf(bridge.getSuperStructure().corrosion));
     }
 
     public Label qqq;
-    public Bridge bridge;
+    public static Bridge bridge;
     public Pane idToolbar;
     public Pane idStaеtsPane;
     public MenuItem idNewBridge;
     public Label idStaеtsString;
     public static Connection connect;
+
+    public void createBridge(ActionEvent actionEvent) {
+        qqq.setText(String.valueOf(bridge.getSupport().header));
+    }
 }

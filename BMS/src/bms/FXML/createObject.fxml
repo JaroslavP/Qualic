@@ -249,11 +249,7 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</CheckBox><CheckBox fx:id="ss8" layoutX="30.0" layoutY="298.0" mnemonicParsing="false" text="Залишкокі прогини балок">
-<font>
-<Font name="Times New Roman" size="16.0" />
-</font>
-</CheckBox><CheckBox fx:id="ss9" layoutX="30.0" layoutY="331.0" mnemonicParsing="false" text="Тріщини в болтах/гайках">
+</CheckBox><CheckBox fx:id="ss8" layoutX="32.0" layoutY="301.0" mnemonicParsing="false" text="Тріщини в болтах/гайках">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -330,7 +326,7 @@
 <children>
 <CheckBox fx:id="f1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Осідання всіх частин фундаменту" />
 <CheckBox fx:id="f2" layoutX="14.0" layoutY="38.0" mnemonicParsing="false" text="Пошкодження підземної(підводної )частини фундаменту" />
-<CheckBox fx:id="f3" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" text="Відсутність деформаційних швів на тротуарах" />
+<CheckBox fx:id="f3" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" text="Сила паводку перевищила дані спостережень" />
 <CheckBox fx:id="f5" layoutX="14.0" layoutY="115.0" mnemonicParsing="false" text="Зміщення фундаменту призводять до зсуву прогоних будов" />
 <CheckBox fx:id="f4" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" text="Деформація поверхні в місці знаходження фундаменту" />
 </children>
@@ -390,6 +386,6 @@
 </Tab>
   </tabs>
 </TabPane><Pane prefHeight="26.0" prefWidth="700.0" style="-fx-background-color: #E3E3E3;">
-<children><Button fx:id="createButton" layoutX="2.0" mnemonicParsing="false" onAction="#createBridge" text="Створити" /><Button fx:id="closeButton" layoutX="71.0" mnemonicParsing="false" onAction="#closeForm" text="Закрити" />
+<children><Button fx:id="createButton" layoutX="2.0" mnemonicParsing="false" onAction="#sendBridge" text="Створити" /><Button fx:id="closeButton" layoutX="71.0" mnemonicParsing="false" onAction="#closeForm" text="Закрити" />
 </children></Pane>
 </children></AnchorPane>

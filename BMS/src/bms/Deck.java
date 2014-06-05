@@ -1,6 +1,7 @@
 package bms;
 
 public class Deck {
+
     public double coating;
     public double drainage;
     public double expensionJoins;
