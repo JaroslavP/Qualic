@@ -25,6 +25,8 @@ public class Controller {
         stage.setTitle("Новий міст");
         stage.setScene(new Scene(root, 690, 540));
         stage.setResizable(false);
+        bridge = new Bridge(new Deck(0,0,0,0,0));
+        CreateNewObject.bbb = bridge;
         stage.show();
     }
 
@@ -52,6 +54,13 @@ public class Controller {
         }
     }
 
+    public void createBridge () {
+        double ddd= bridge.getDeck().coating;
+        qqq.setText(String.valueOf(ddd));
+    }
+
+    public Label qqq;
+    public Bridge bridge;
     public Pane idToolbar;
     public Pane idStaеtsPane;
     public MenuItem idNewBridge;

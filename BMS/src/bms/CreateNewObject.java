@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class CreateNewObject implements Initializable{
+    public static Bridge bbb;
     public Button createButton;
     public Button closeButton;
     boolean P = false;
@@ -70,6 +71,56 @@ public class CreateNewObject implements Initializable{
     public ComboBox<String> RS2;
     public ComboBox<String> RS3;
 
+    public Deck makeDeck () {
+        double coat = 0;
+        double drai = 0;
+        double expJoins = 0;
+        double fen = 0;
+        double side = 0;
+        try {
+            if (idKoliynist.getValue().equals("до 3см"))
+                coat += 0.43;
+            else if (idKoliynist.getValue().equals("до 5см"))
+                coat += 1.43;
+            else if (idKoliynist.getValue().equals("до 8см"))
+                coat += 3.8;
+        } catch (Exception ignored) {}
+        try {
+            if (idNapluvy.getValue().equals("до 3см"))
+                coat += 0.43;
+            else if (idNapluvy.getValue().equals("до 5см"))
+                coat += 1.43;
+            else if (idNapluvy.getValue().equals("до 8см"))
+                coat += 3.8;
+        } catch (Exception ignored) {}
+        try {
+            if (idDamage.getValue().equals("до 1см, 5%"))
+                coat += 0.43;
+            else if (idDamage.getValue().equals("до 3см, 10%"))
+                coat += 1.43;
+            else if (idDamage.getValue().equals("до 5см, 25%"))
+                coat += 3.8;
+            else if (idDamage.getValue().equals("до 8-10см, 40-50%"))
+                coat += 11.8;
+        } catch (Exception ignored) {}
+        try {
+            if (idVizd.getValue().equals("Невеликі просадки"))
+                coat += 1;
+            else if (idVizd.getValue().equals("Провалювання"))
+                coat += 9;
+        } catch (Exception ignored) {}
+        if (SV1.isSelected()) drai += 0.42;      if (DH1.isSelected()) expJoins += 1;
+        if (SV2.isSelected()) drai += 1;         if (DH2.isSelected()) expJoins += 1;
+        if (SV3.isSelected()) drai += 1;         if (DH3.isSelected()) expJoins += 1;
+        if (SV4.isSelected()) drai += 2.37;      if (DH4.isSelected()) expJoins += 2.37;
+        if (SV5.isSelected()) drai += 2.37;      if (DH5.isSelected()) expJoins += 8;
+        if (O1.isSelected()) fen += 0.42;        if (T1.isSelected()) side += 0.42;
+        if (O2.isSelected()) fen += 0.42;        if (T1.isSelected()) side += 1;
+        if (O3.isSelected()) fen += 1;           if (T1.isSelected()) side += 2.37;
+        if (O4.isSelected()) fen += 2.37;        if (T1.isSelected()) side += 8;
+        return new Deck(coat, drai, expJoins, fen, side);
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         idCategory.getItems().addAll("Магістраль", "Загального призначення", "Звичайні");
@@ -102,13 +153,14 @@ public class CreateNewObject implements Initializable{
     }
 
     public void createBridge() {
-        if (!P && !S) {
-            MessageBox.show(createButton.getScene().getWindow(),
-                    "Необхідно підтвердити паспортні та технічні дані ! ! !",
-                    "Помилка", MessageBox.ICON_ERROR);
-        } else {
+//        if (!P && !S) {
+//            MessageBox.show(createButton.getScene().getWindow(),
+//                    "Необхідно підтвердити паспортні та технічні дані ! ! !",
+//                    "Помилка", MessageBox.ICON_ERROR);
+//        } else {
+            bbb = new Bridge(makeDeck());
             ((Stage)createButton.getScene().getWindow()).close();
-        }
+//        }
 
     }
 

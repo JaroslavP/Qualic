@@ -1,13 +1,13 @@
 package bms;
 
 public class Deck {
-    public float coating;
-    public float drainage;
-    public float expensionJoins;
-    public float fence;
-    public float sidewalk;
+    public double coating;
+    public double drainage;
+    public double expensionJoins;
+    public double fence;
+    public double sidewalk;
 
-    public Deck (float AValue, float BValue, float CValue, float DValue, float EValue) {
+    public Deck (double AValue, double BValue, double CValue, double DValue, double EValue) {
         coating = AValue;
         drainage = BValue;
         expensionJoins = CValue;

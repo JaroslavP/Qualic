@@ -11,7 +11,7 @@
     <Menu mnemonicParsing="false" text="Об'кт">
       <items>
         <MenuItem fx:id="idNewBridge" mnemonicParsing="false" onAction="#createNewObject" text="Новий" />
-<MenuItem mnemonicParsing="false" text="Close" />
+<MenuItem mnemonicParsing="false" onAction="#createBridge" text="Close" />
 <MenuItem mnemonicParsing="false" text="Close" />
       </items>
     </Menu>
@@ -37,5 +37,20 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font></Label>
-</children></Pane>
+</children></Pane><TabPane layoutY="59.0" prefHeight="620.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+  <tabs>
+    <Tab text="Untitled Tab 1">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><Label fx:id="qqq" layoutX="75.0048828125" layoutY="69.5" text="Label" />
+</children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Untitled Tab 2">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
 </children></AnchorPane>
