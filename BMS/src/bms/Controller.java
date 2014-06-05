@@ -1,11 +1,11 @@
 package bms;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -26,6 +26,7 @@ public class Controller {
         stage.setTitle("Новий міст");
         stage.setScene(new Scene(root, 690, 540));
         stage.setResizable(false);
+        CreateNewObject.control = this;
         stage.show();
     }
 
@@ -53,19 +54,23 @@ public class Controller {
         }
     }
 
-    public static void createBridge() {
-        //qqq.setText(String.valueOf(bridge.getSuperStructure().corrosion));
-    }
-
     public Label qqq;
-    public static Bridge bridge;
+    public Bridge bigBridge;
     public Pane idToolbar;
     public Pane idStaеtsPane;
     public MenuItem idNewBridge;
     public Label idStaеtsString;
     public static Connection connect;
+    public TextField TA;
 
-    public void createBridge(ActionEvent actionEvent) {
-        qqq.setText(String.valueOf(bridge.getSupport().header));
+    public void cBridge() {
+        bigBridge.createRating();
+        double aaa = bigBridge.getSupport().header;
+        TA.setText("asdfgsadfgjdsfnjg");
+        qqq.setText(String.valueOf(aaa));
+    }
+
+    public void createBridge() {
+        qqq.setText(Double.toString(bigBridge.getSupport().header));
     }
 }

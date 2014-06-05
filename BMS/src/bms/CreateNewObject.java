@@ -18,23 +18,24 @@ import java.util.ResourceBundle;
 public class CreateNewObject implements Initializable{
 
     public Button createButton;
+    public static Controller control;
     public Button closeButton;
     boolean P = false;
     boolean S = false;
     // PASSPORT
-    public ComboBox<String> idCategory;     public TextField idBridgeName;
-    public ComboBox<Integer> idLines;       public TextField idBarrier;
-    public ComboBox<Integer> idInput;       public TextField idLocality;
-    public ComboBox<Integer> idLifetime;    public TextField idDistance;
-    public ComboBox<Integer> idRepair;      public TextField idCompany;
-    public String pathPic;                  public Button idReadyPasport;
+    public TextField idBridgeName;      public ComboBox<Integer> idInput;
+    public TextField idBarrier;         public TextField idCompany;
+    public ComboBox<String> idCategory; public ComboBox<Integer> idLifetime;
+    public ComboBox<Integer> idLines;   public ComboBox<Integer> idRepair;
+    public TextField idLocality;        public String pathPic;
+    public TextField idDistance;        public Button idReadyPasport;
     public Button idChooserPic;
     // SPECIFICATION
     public TextField idLenght;              public TextField idAngle;
     public TextField idRoadWidth;           public TextField idLoad;
     public TextField idLeftWidth;           public TextField idFLoad;
-    public TextField idRightWidth;          public Button idChooserShema;
-    public ComboBox<Integer> idFence;       public String pathShema;
+    public TextField idRightWidth;          public String pathShema;
+    public ComboBox<Integer> idFence;       public Button idChooserShema;
     public ComboBox<Integer> idWalkFence;   public Button idReadySpecification;
     // DECK
     public ComboBox<String> idKoliynist;
@@ -97,8 +98,54 @@ public class CreateNewObject implements Initializable{
         Rg2.getItems().addAll("до 0.3мм", "0.3-0.5мм", "0.5-1.5мм");
         Rg3.getItems().addAll("pH 11", "pH 10", "pH 9", "pH 8", "pH 7");
         ss1.getItems().addAll("0.1-0.2мм", "0.2-0.3мм", "0.3-0.5мм");
-        ss2.getItems().addAll("до 0.3мм", "до 0.5мм", "0.7мм");
+        ss2.getItems().addAll("до 0.3мм", "до 0.5мм", "до 0.7мм");
         ss3.getItems().addAll("2%", "4%", "6%", "10%");
+    }
+
+    public BridgePasport makeBP () {
+        String n = "";
+        String b = "";
+        String c = "";
+        int l = 1;
+        String loc = "";
+        double d = 0;
+        int i = 1950;
+        String cp = "";
+        int lt = 1951;
+        int r = 1950;
+        String p = "";
+        try { n = idBridgeName.getText(); } catch (Exception ignored) {}
+        try { b = idBridgeName.getText(); } catch (Exception ignored) {}
+        try { c = idCategory.getValue(); } catch (Exception ignored) {}
+        try { l = idLines.getValue(); } catch (Exception ignored) {}
+        try { loc = idLocality.getText(); } catch (Exception ignored) {}
+        try { d = Double.parseDouble(idDistance.getText()); } catch (Exception ignored) {}
+        try { i = idInput.getValue(); } catch (Exception ignored) {}
+        try { cp = idCompany.getText(); } catch (Exception ignored) {}
+        try { lt = idLifetime.getValue(); } catch (Exception ignored) {}
+        try { r = idRepair.getValue(); } catch (Exception ignored) {}
+        try { p = pathPic; } catch (Exception ignored) {}
+        return new BridgePasport(n, b, c, l, loc, d, i, cp, lt, r , p);
+    }
+
+    public Specific makeSpecific () {
+        int aa = 0; int bb = 0;
+        int cc = 0; int dd = 0;
+        int ee = 0; int ff = 0;
+        double gg = 0;
+        int hh = 0; int ii = 0;
+        String jj = "";
+        try { aa = Integer.parseInt(idLenght.getText()); } catch (Exception ignored) {}
+        try { bb = Integer.parseInt(idRoadWidth.getText()); } catch (Exception ignored) {}
+        try { cc = Integer.parseInt(idLeftWidth.getText()); } catch (Exception ignored) {}
+        try { dd = Integer.parseInt(idRightWidth.getText()); } catch (Exception ignored) {}
+        try { ee = idFence.getValue(); } catch (Exception ignored) {}
+        try { ff = idWalkFence.getValue(); } catch (Exception ignored) {}
+        try { gg = Double.parseDouble(idAngle.getText()); } catch (Exception ignored) {}
+        try { hh = Integer.parseInt(idLoad.getText()); } catch (Exception ignored) {}
+        try { ii = Integer.parseInt(idFLoad.getText()); } catch (Exception ignored) {}
+        try { jj = pathShema; } catch (Exception ignored) {}
+        return new Specific(aa, bb, cc, dd, ee, ff, gg, hh, ii, jj);
     }
 
     public Deck makeDeck () {
@@ -281,23 +328,16 @@ public class CreateNewObject implements Initializable{
     }
 
     public void sendBridge() {
+        control.bigBridge = new Bridge(makeBP(), makeSpecific(), makeDeck(),
+                makeSuperStructure(), makeRS(), makeSupport());
+        control.cBridge();
+        ((Stage)createButton.getScene().getWindow()).close();
 //        if (!P && !S) {
 //            MessageBox.show(createButton.getScene().getWindow(),
 //                    "Необхідно підтвердити паспортні та технічні дані ! ! !",
 //                    "Помилка", MessageBox.ICON_ERROR);
 //        } else {
-            //Controller.createBridge();
-            Controller.bridge = new Bridge(makeDeck(), makeSuperStructure(), makeRS(), makeSupport());
-            Platform.runLater(new Runnable() {
-                @Override
-                public void run() {
-//                   Controller.bridge = new Bridge(makeDeck(), makeSuperStructure());
-//                   Controller.createBridge();
-                }
-            });
-            ((Stage)createButton.getScene().getWindow()).close();
 //        }
-
     }
 
     public void closeForm() {
@@ -374,7 +414,8 @@ public class CreateNewObject implements Initializable{
         try {
             int b = Integer.parseInt(idLoad.getText());
             int bb = Integer.parseInt(idFLoad.getText());
-            if ((b > 0) && (bb > 0 ) && (b > bb)) {
+            int bbb = Integer.parseInt(idLenght.getText());
+            if ((b > 0) && (bb > 0 ) && (b > bb) && (bbb > 0)) {
                 S = true;
                 idFence.setDisable(true);       idWalkFence.setDisable(true);
                 idLenght.setEditable(false);    idRoadWidth.setEditable(false);

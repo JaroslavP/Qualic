@@ -70,7 +70,7 @@
 <content>
 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
 <children>
-<Label layoutX="24.0" layoutY="26.0" text="Довжина">
+<Label layoutX="24.0" layoutY="26.0" text="Довжина*">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>

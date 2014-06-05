@@ -5,7 +5,7 @@
 <Workspace>
 	<Local Expanded="Yes">
 		<Model Expanded="Yes" ID="{5D8E40BC-53D9-4DCA-A6A1-392E525615F8}" Loaded="No" Name="BMS" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="BMS.ldm"/>
-		<Model Expanded="Yes" ID="{FB9F0870-01BE-484B-87EC-610999DEA140}" Name="BMS" Selected="Yes" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="BMS.pdm"/>
+		<Model Expanded="Yes" ID="{FB9F0870-01BE-484B-87EC-610999DEA140}" Loaded="No" Name="BMS" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="BMS.pdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>
