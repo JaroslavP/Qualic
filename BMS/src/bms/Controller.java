@@ -1,5 +1,6 @@
 package bms;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,6 +11,7 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -18,6 +20,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Controller {
+
+    public AnchorPane idAP;
 
     public void createNewObject() {
         Parent root = null;
@@ -76,28 +80,24 @@ public class Controller {
         double aaa = bigBridge.getRating().wear;
         TA.setText("asdfgsadfgjdsfnjg");
         qqq.setText(String.valueOf(aaa));
-        idGraf.setTitle("qqqqqq");
-        XYChart.Series series = new XYChart.Series();
-        series.setName("My portfolio");
-        series.getData().add(new XYChart.Data(1, 23));
-        series.getData().add(new XYChart.Data(2, 14));
-        series.getData().add(new XYChart.Data(3, 15));
-        series.getData().add(new XYChart.Data(4, 24));
-        series.getData().add(new XYChart.Data(5, 34));
-        series.getData().add(new XYChart.Data(6, 36));
-        series.getData().add(new XYChart.Data(7, 22));
-        series.getData().add(new XYChart.Data(8, 45));
-        series.getData().add(new XYChart.Data(9, 43));
-        series.getData().add(new XYChart.Data(10, 17));
-        series.getData().add(new XYChart.Data(11, 29));
-        series.getData().add(new XYChart.Data(12, 25));
-        idGraf.getData().add(series);
-        idGraf.getXAxis().setAutoRanging(true);
-        idGraf.getYAxis().setAutoRanging(true);
     }
 
     public void createBridge() {
         //qqq.setText(Double.toString(bigBridge.getSupport().header));
+
+    }
+
+    public void grafff() {
+        idGraf.setTitle("qqqqqq");
+        XYChart.Series series = new XYChart.Series();
+        series.setName("My portfolio");
+        double U = bigBridge.getRating().wear;
+        for (int i = 0; i < 100; i++) {
+            U = U/58;
+            series.getData().add(new XYChart.Data(i, U));
+        }
+        idGraf.getData().add(series);
+        idAP.getChildren().add(idGraf);
 
     }
 }
