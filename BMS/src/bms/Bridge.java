@@ -29,7 +29,20 @@ public class Bridge {
         rating.rRegulStruct += regulatoryStructure.areaDamege + regulatoryStructure.track
                 + regulatoryStructure.speedLimit + regulatoryStructure.cone;
         rating.rSupport += support.header + support.bodySupport + support.foundation;
-
+        if (specific.length.equals("менше 21м"))
+            rating.wear += rating.rDeck*0.2 + rating.rSuperStruct*0.45 + rating.rSupport*0.25 + rating.rRegulStruct*0.1;
+        if (specific.length.equals("22-28м"))
+            rating.wear += rating.rDeck*0.2 + rating.rSuperStruct*0.4 + rating.rSupport*0.3 + rating.rRegulStruct*0.1;
+        if (specific.length.equals("29-35м"))
+            rating.wear += rating.rDeck*0.17 + rating.rSuperStruct*0.4 + rating.rSupport*0.33 + rating.rRegulStruct*0.1;
+        if (specific.length.equals("36-42м"))
+            rating.wear += rating.rDeck*0.15 + rating.rSuperStruct*0.4 + rating.rSupport*0.36 + rating.rRegulStruct*0.09;
+        if (specific.length.equals("43-62м"))
+            rating.wear += rating.rDeck*0.15 + rating.rSuperStruct*0.39 + rating.rSupport*0.4 + rating.rRegulStruct*0.06;
+        if (specific.length.equals("63-83м"))
+            rating.wear += rating.rDeck*0.13 + rating.rSuperStruct*0.36 + rating.rSupport*0.46 + rating.rRegulStruct*0.05;
+        if (specific.length.equals("більше 84м"))
+            rating.wear += rating.rDeck*0.11 + rating.rSuperStruct*0.35 + rating.rSupport*0.5 + rating.rRegulStruct*0.04;
     }
 
     public BridgePasport getBridgePasport() { return bridgePasport; }
@@ -38,4 +51,5 @@ public class Bridge {
     public SuperStructure getSuperStructure() { return superStructure; }
     public RegulatoryStructure getRegulatoryStructure() { return regulatoryStructure; }
     public Support getSupport() { return support; }
+    public Rating getRating() { return rating; }
 }

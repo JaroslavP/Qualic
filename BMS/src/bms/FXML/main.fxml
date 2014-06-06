@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -42,7 +43,14 @@
     <Tab text="Untitled Tab 1">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-<children><Label fx:id="qqq" layoutX="75.0048828125" layoutY="69.5" text="Label" /><TextField fx:id="TA" layoutX="123.74609375" layoutY="126.5" />
+<children><Label fx:id="qqq" layoutX="75.0048828125" layoutY="69.5" text="Label" /><TextField fx:id="TA" layoutX="75.0" layoutY="113.0" /><LineChart fx:id="idGraf" layoutX="244.0" layoutY="38.0">
+  <xAxis>
+    <CategoryAxis side="BOTTOM" />
+  </xAxis>
+  <yAxis>
+    <NumberAxis side="LEFT" />
+  </yAxis>
+</LineChart>
 </children></AnchorPane>
       </content>
     </Tab>

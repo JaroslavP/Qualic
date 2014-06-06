@@ -23,25 +23,23 @@ public class CreateNewObject implements Initializable{
     boolean P = false;
     boolean S = false;
     // PASSPORT
-    public TextField idBridgeName;      public ComboBox<Integer> idInput;
-    public TextField idBarrier;         public TextField idCompany;
-    public ComboBox<String> idCategory; public ComboBox<Integer> idLifetime;
-    public ComboBox<Integer> idLines;   public ComboBox<Integer> idRepair;
-    public TextField idLocality;        public String pathPic;
-    public TextField idDistance;        public Button idReadyPasport;
+    public TextField idBridgeName;          public ComboBox<Integer> idInput;
+    public TextField idBarrier;             public TextField idCompany;
+    public ComboBox<String> idCategory;     public ComboBox<Integer> idLifetime;
+    public ComboBox<Integer> idLines;       public ComboBox<Integer> idRepair;
+    public TextField idLocality;            public String pathPic;
+    public TextField idDistance;            public Button idReadyPasport;
     public Button idChooserPic;
     // SPECIFICATION
-    public TextField idLenght;              public TextField idAngle;
+    public ComboBox<String> idLength;       public TextField idAngle;
     public TextField idRoadWidth;           public TextField idLoad;
     public TextField idLeftWidth;           public TextField idFLoad;
     public TextField idRightWidth;          public String pathShema;
     public ComboBox<Integer> idFence;       public Button idChooserShema;
     public ComboBox<Integer> idWalkFence;   public Button idReadySpecification;
     // DECK
-    public ComboBox<String> idKoliynist;
-    public ComboBox<String> idNapluvy;
-    public ComboBox<String> idDamage;
-    public ComboBox<String> idVizd;
+    public ComboBox<String> idKoliynist;    public ComboBox<String> idNapluvy;
+    public ComboBox<String> idDamage;       public ComboBox<String> idVizd;
     public CheckBox SV1;                    public CheckBox SV2;
     public CheckBox SV3;                    public CheckBox SV4;
     public CheckBox SV5;                    public CheckBox DH1;
@@ -67,22 +65,23 @@ public class CreateNewObject implements Initializable{
     public CheckBox f2;                     public CheckBox f3;
     public CheckBox f4;                     public CheckBox f5;
     // REGULATORY STRUCTURE
-    public ComboBox<String> RS1;
-    public ComboBox<String> RS2;
-    public ComboBox<String> RS3;
-    public ComboBox<String> RS4;
+    public ComboBox<String> RS1;            public ComboBox<String> RS2;
+    public ComboBox<String> RS3;            public ComboBox<String> RS4;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         idCategory.getItems().addAll("Магістраль", "Загального призначення", "Звичайні");
         idLines.getItems().addAll(1,2,3,4,5,6,7,8);
         List<Integer> years = new ArrayList<Integer>();
+        List<Integer> yearss = new ArrayList<Integer>();
         for (int i = 1950; i <= 2014; i++) {
-            years.add(i);
-        }
+            years.add(i); }
+        for (int i = 1951; i <= 2114; i++) {
+            yearss.add(i); }
         ObservableList<Integer> integerObservableList = FXCollections.observableArrayList(years);
+        ObservableList<Integer> iOL = FXCollections.observableArrayList(yearss);
         idInput.getItems().addAll(integerObservableList);
-        idLifetime.getItems().addAll(integerObservableList);
+        idLifetime.getItems().addAll(iOL);
         idRepair.getItems().addAll(integerObservableList);
         idFence.getItems().addAll(0,1,2,3);
         idWalkFence.getItems().addAll(0,1,2,3,4);
@@ -100,6 +99,7 @@ public class CreateNewObject implements Initializable{
         ss1.getItems().addAll("0.1-0.2мм", "0.2-0.3мм", "0.3-0.5мм");
         ss2.getItems().addAll("до 0.3мм", "до 0.5мм", "до 0.7мм");
         ss3.getItems().addAll("2%", "4%", "6%", "10%");
+        idLength.getItems().addAll("менше 21м", "22-28м","29-35м","36-42м","43-62м","63-83м","більше 84м");
     }
 
     public BridgePasport makeBP () {
@@ -129,13 +129,12 @@ public class CreateNewObject implements Initializable{
     }
 
     public Specific makeSpecific () {
-        int aa = 0; int bb = 0;
-        int cc = 0; int dd = 0;
-        int ee = 0; int ff = 0;
-        double gg = 0;
-        int hh = 0; int ii = 0;
-        String jj = "";
-        try { aa = Integer.parseInt(idLenght.getText()); } catch (Exception ignored) {}
+        String aa = ""; int bb = 0;
+        int cc = 0;     int dd = 0;
+        int ee = 0;     int ff = 0;
+        double gg = 0;  int hh = 0;
+        int ii = 0;     String jj = "";
+        try { aa = idLength.getValue(); } catch (Exception ignored) {}
         try { bb = Integer.parseInt(idRoadWidth.getText()); } catch (Exception ignored) {}
         try { cc = Integer.parseInt(idLeftWidth.getText()); } catch (Exception ignored) {}
         try { dd = Integer.parseInt(idRightWidth.getText()); } catch (Exception ignored) {}
@@ -328,16 +327,16 @@ public class CreateNewObject implements Initializable{
     }
 
     public void sendBridge() {
-        control.bigBridge = new Bridge(makeBP(), makeSpecific(), makeDeck(),
-                makeSuperStructure(), makeRS(), makeSupport());
-        control.cBridge();
-        ((Stage)createButton.getScene().getWindow()).close();
-//        if (!P && !S) {
-//            MessageBox.show(createButton.getScene().getWindow(),
-//                    "Необхідно підтвердити паспортні та технічні дані ! ! !",
-//                    "Помилка", MessageBox.ICON_ERROR);
-//        } else {
-//        }
+        if (!P || !S) {
+            MessageBox.show(createButton.getScene().getWindow(),
+                    "Необхідно підтвердити паспортні та технічні дані ! ! !",
+                    "Помилка", MessageBox.ICON_ERROR);
+        } else {
+            control.bigBridge = new Bridge(makeBP(), makeSpecific(), makeDeck(),
+                    makeSuperStructure(), makeRS(), makeSupport());
+            control.cBridge();
+            ((Stage)createButton.getScene().getWindow()).close();
+        }
     }
 
     public void closeForm() {
@@ -379,8 +378,7 @@ public class CreateNewObject implements Initializable{
             int I = idInput.getValue();
             int E = idLifetime.getValue();
             String B = idBridgeName.getText();
-            String C = idCategory.getValue();
-            if ((I < E) && (B.length() >= 1) && (C.length() > 3) ) {
+            if ((I < E) && (B.length() >= 1) && (!idCategory.getValue().equals(idCategory.getPromptText()))) {
                 P = true;
                 idCategory.setDisable(true);        idLines.setDisable(true);
                 idInput.setDisable(true);           idLifetime.setDisable(true);
@@ -414,11 +412,10 @@ public class CreateNewObject implements Initializable{
         try {
             int b = Integer.parseInt(idLoad.getText());
             int bb = Integer.parseInt(idFLoad.getText());
-            int bbb = Integer.parseInt(idLenght.getText());
-            if ((b > 0) && (bb > 0 ) && (b > bb) && (bbb > 0)) {
+            if ((b > 0) && (bb > 0) && (b > bb) && (!idLength.getValue().equals(idLength.getPromptText()))) {
                 S = true;
                 idFence.setDisable(true);       idWalkFence.setDisable(true);
-                idLenght.setEditable(false);    idRoadWidth.setEditable(false);
+                idLength.setDisable(true);    idRoadWidth.setEditable(false);
                 idLeftWidth.setEditable(false); idRightWidth.setEditable(false);
                 idLoad.setEditable(false);      idAngle.setEditable(false);
                 idChooserShema.setDisable(true);}
@@ -435,7 +432,7 @@ public class CreateNewObject implements Initializable{
     public void ReleaseSpecification() {
         S = false;
         idFence.setDisable(false);     idWalkFence.setDisable(false);
-        idLenght.setEditable(true);    idRoadWidth.setEditable(true);
+        idLength.setDisable(false);    idRoadWidth.setEditable(true);
         idLeftWidth.setEditable(true); idRightWidth.setEditable(true);
         idLoad.setEditable(true);      idChooserShema.setDisable(false);
         idAngle.setEditable(true);

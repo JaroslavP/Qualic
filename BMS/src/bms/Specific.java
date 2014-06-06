@@ -2,7 +2,7 @@ package bms;
 
 public class Specific {
 
-    public int length;
+    public String length;
     public int roadWidth;
     public int leftWalk;
     public int rightWalk;
@@ -13,7 +13,7 @@ public class Specific {
     public int fLoad;
     public String pathShema;
 
-    public Specific (int a, int b, int c, int d, int e, int f,
+    public Specific (String a, int b, int c, int d, int e, int f,
                      double g, int h, int i, String j) {
         length = a;
         roadWidth = b;

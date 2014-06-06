@@ -22,11 +22,11 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idCategory" layoutX="239.0" layoutY="89.0" prefHeight="25.0" prefWidth="181.0" promptText=" " /><TextField fx:id="idBarrier" layoutX="239.0" layoutY="55.0" prefHeight="25.0" prefWidth="182.0" /><Label layoutX="24.0" layoutY="129.0" text="Кількість смуг руху">
+</Label><ComboBox fx:id="idCategory" layoutX="239.0" layoutY="89.0" prefHeight="25.0" prefWidth="181.0" promptText=" обрати категорію" /><TextField fx:id="idBarrier" layoutX="239.0" layoutY="55.0" prefHeight="25.0" prefWidth="182.0" /><Label layoutX="24.0" layoutY="129.0" text="Кількість смуг руху">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idLines" layoutX="239.0" layoutY="126.0" prefHeight="25.0" prefWidth="180.0" /><Label layoutX="24.0" layoutY="163.0" text="Найближчий населений пункт">
+</Label><ComboBox fx:id="idLines" layoutX="239.0" layoutY="126.0" prefHeight="25.0" prefWidth="180.0" promptText="обрати к-ть смуг" /><Label layoutX="24.0" layoutY="163.0" text="Найближчий населений пункт">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -38,7 +38,7 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idInput" layoutX="239.0" layoutY="224.0" prefHeight="25.0" prefWidth="179.0" /><Label layoutX="21.0" layoutY="264.0" text="Будівельна компанія">
+</Label><ComboBox fx:id="idInput" layoutX="239.0" layoutY="224.0" prefHeight="25.0" prefWidth="179.0" promptText="введено" /><Label layoutX="21.0" layoutY="264.0" text="Будівельна компанія">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -54,7 +54,7 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idLifetime" layoutX="239.0" layoutY="295.0" prefHeight="25.0" prefWidth="179.0" /><ComboBox fx:id="idRepair" layoutX="240.0" layoutY="328.0" prefHeight="25.0" prefWidth="179.0" /><Separator layoutX="22.0" layoutY="438.0" prefHeight="9.0" prefWidth="658.0" /><Label layoutX="24.0" layoutY="447.0" text="* - поля обов'язкові для заповнення ">
+</Label><ComboBox fx:id="idLifetime" layoutX="239.0" layoutY="295.0" prefHeight="25.0" prefWidth="179.0" promptText="закінчення" /><ComboBox fx:id="idRepair" layoutX="240.0" layoutY="328.0" prefHeight="25.0" prefWidth="179.0" promptText="проведенно" /><Separator layoutX="22.0" layoutY="438.0" prefHeight="9.0" prefWidth="658.0" /><Label layoutX="24.0" layoutY="447.0" text="* - поля обов'язкові для заповнення ">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -70,12 +70,11 @@
 <content>
 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
 <children>
-<Label layoutX="24.0" layoutY="26.0" text="Довжина*">
+<Label layoutX="24.0" layoutY="26.0" text="Довжина (м)*">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<TextField fx:id="idLenght" layoutX="239.0" layoutY="23.0" prefHeight="25.0" prefWidth="182.0" />
 <Label layoutX="24.0" layoutY="92.0" text="Ширина лівого тротуару">
 <font>
 <Font name="Times New Roman" size="16.0" />
@@ -134,7 +133,7 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><TextField fx:id="idFLoad" layoutX="240.0" layoutY="290.0" prefHeight="25.0" prefWidth="178.0" />
+</Label><TextField fx:id="idFLoad" layoutX="240.0" layoutY="290.0" prefHeight="25.0" prefWidth="178.0" /><ComboBox fx:id="idLength" layoutX="240.0" layoutY="23.0" prefHeight="25.0" prefWidth="180.0" promptText="обрати довжину" />
 </children>
 </AnchorPane>
 </content>
