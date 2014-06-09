@@ -8,7 +8,6 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import jfx.messagebox.MessageBox;
@@ -16,9 +15,7 @@ import jfx.messagebox.MessageBox;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class CreateNewObject implements Initializable{
 
@@ -31,7 +28,7 @@ public class CreateNewObject implements Initializable{
     public TextField idBridgeName;          public ComboBox<Integer> idInput;
     public TextField idBarrier;             public TextField idCompany;
     public ComboBox<String> idCategory;     public ComboBox<Integer> idLifetime;
-    public ComboBox<Integer> idLines;       public ComboBox<Integer> idRepair;
+    public ComboBox<Integer> idLines;
     public TextField idLocality;            public String pathPic;
     public TextField idDistance;            public Button idReadyPasport;
     public Button idChooserPic;
@@ -81,13 +78,12 @@ public class CreateNewObject implements Initializable{
         List<Integer> yearss = new ArrayList<Integer>();
         for (int i = 1950; i <= 2014; i++) {
             years.add(i); }
-        for (int i = 1951; i <= 2114; i++) {
+        for (int i = 2015 + 1; i <= 2114; i++) {
             yearss.add(i); }
         ObservableList<Integer> integerObservableList = FXCollections.observableArrayList(years);
         ObservableList<Integer> iOL = FXCollections.observableArrayList(yearss);
         idInput.getItems().addAll(integerObservableList);
         idLifetime.getItems().addAll(iOL);
-        idRepair.getItems().addAll(integerObservableList);
         idFence.getItems().addAll(0,1,2,3);
         idWalkFence.getItems().addAll(0,1,2,3,4);
         idKoliynist.getItems().addAll("до 3см", "до 5см", "до 8см");
@@ -117,7 +113,6 @@ public class CreateNewObject implements Initializable{
         int i = 1950;
         String cp = "";
         int lt = 1951;
-        int r = 1950;
         String p = "";
         try { n = idBridgeName.getText(); } catch (Exception ignored) {}
         try { b = idBarrier.getText(); } catch (Exception ignored) {}
@@ -128,9 +123,8 @@ public class CreateNewObject implements Initializable{
         try { i = idInput.getValue(); } catch (Exception ignored) {}
         try { cp = idCompany.getText(); } catch (Exception ignored) {}
         try { lt = idLifetime.getValue(); } catch (Exception ignored) {}
-        try { r = idRepair.getValue(); } catch (Exception ignored) {}
         try { p = pathPic; } catch (Exception ignored) {}
-        return new BridgePasport(n, b, c, l, loc, d, i, cp, lt, r , p);
+        return new BridgePasport(n, b, c, l, loc, d, i, cp, lt, p);
     }
 
     public Specific makeSpecific () {
@@ -340,6 +334,7 @@ public class CreateNewObject implements Initializable{
             control.bigBridge = new Bridge(makeBP(), makeSpecific(), makeDeck(),
                     makeSuperStructure(), makeRS(), makeSupport());
             control.cBridge();
+            control.idStatusString.setText("!: Об'єкт успішно створенно.");
             ((Stage)createButton.getScene().getWindow()).close();
         }
     }
@@ -414,14 +409,15 @@ public class CreateNewObject implements Initializable{
 
     public void BlockPasportData() {
         try {
-            int I = idInput.getValue();
+            //Calendar ddd = new GregorianCalendar();
+            int I = new GregorianCalendar().YEAR;
             int E = idLifetime.getValue();
             String B = idBridgeName.getText();
             if ((I < E) && (B.length() >= 1) && (!idCategory.getValue().equals(idCategory.getPromptText()))) {
                 P = true;
                 idCategory.setDisable(true);        idLines.setDisable(true);
                 idInput.setDisable(true);           idLifetime.setDisable(true);
-                idRepair.setDisable(true);          idBridgeName.setEditable(false);
+                idBridgeName.setEditable(false);
                 idBarrier.setEditable(false);       idLocality.setEditable(false);
                 idDistance.setEditable(false);      idCompany.setEditable(false);
                 idChooserPic.setDisable(true);
@@ -441,7 +437,7 @@ public class CreateNewObject implements Initializable{
         P = false;
         idCategory.setDisable(false); idLines.setDisable(false);
         idInput.setDisable(false);    idLifetime.setDisable(false);
-        idRepair.setDisable(false);   idBridgeName.setEditable(true);
+        idBridgeName.setEditable(true);
         idBarrier.setEditable(true);  idLocality.setEditable(true);
         idDistance.setEditable(true); idCompany.setEditable(true);
         idChooserPic.setDisable(false);
@@ -451,7 +447,7 @@ public class CreateNewObject implements Initializable{
         try {
             int b = Integer.parseInt(idLoad.getText());
             int bb = Integer.parseInt(idFLoad.getText());
-            if ((b > 0) && (bb > 0) && (b > bb) && (!idLength.getValue().equals(idLength.getPromptText()))) {
+            if ((b > 0) && (bb > 0) && (b >= bb) && (!idLength.getValue().equals(idLength.getPromptText()))) {
                 S = true;
                 idFence.setDisable(true);       idWalkFence.setDisable(true);
                 idLength.setDisable(true);    idRoadWidth.setEditable(false);

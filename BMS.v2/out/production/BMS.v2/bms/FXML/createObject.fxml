@@ -34,7 +34,7 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><TextField fx:id="idDistance" layoutX="239.0" layoutY="191.0" prefHeight="25.0" prefWidth="178.0" /><Label layoutX="24.0" layoutY="227.0" text="Рік вводу в експлуатацію*">
+</Label><TextField fx:id="idDistance" layoutX="239.0" layoutY="191.0" prefHeight="25.0" prefWidth="178.0" /><Label layoutX="24.0" layoutY="227.0" text="Рік вводу в експлуатацію">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -46,19 +46,15 @@
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="24.0" layoutY="331.0" text="Рік останнього огляду">
+</Label><Label fx:id="idPic" layoutX="23.0" layoutY="333.0" text="Зображення**">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idPic" layoutX="23.0" layoutY="364.0" text="Зображення**">
+</Label><ComboBox fx:id="idLifetime" layoutX="239.0" layoutY="295.0" prefHeight="25.0" prefWidth="179.0" promptText="закінчення" /><Separator layoutX="22.0" layoutY="438.0" prefHeight="9.0" prefWidth="658.0" /><Label layoutX="24.0" layoutY="447.0" text="* - поля обов'язкові для заповнення ">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><ComboBox fx:id="idLifetime" layoutX="239.0" layoutY="295.0" prefHeight="25.0" prefWidth="179.0" promptText="закінчення" /><ComboBox fx:id="idRepair" layoutX="240.0" layoutY="328.0" prefHeight="25.0" prefWidth="179.0" promptText="проведенно" /><Separator layoutX="22.0" layoutY="438.0" prefHeight="9.0" prefWidth="658.0" /><Label layoutX="24.0" layoutY="447.0" text="* - поля обов'язкові для заповнення ">
-<font>
-<Font name="Times New Roman" size="16.0" />
-</font>
-</Label><Button fx:id="idReadyPasport" layoutX="22.0" layoutY="405.0" mnemonicParsing="false" onAction="#BlockPasportData" prefHeight="33.0" prefWidth="132.0" text="Готово" /><Button fx:id="idEditPasport" layoutX="171.0" layoutY="404.0" mnemonicParsing="false" onAction="#ReleasePasportData" prefHeight="33.0" prefWidth="132.0" text="Редагувати" /><Button fx:id="idChooserPic" layoutX="237.0" layoutY="361.0" mnemonicParsing="false" onAction="#ChoosePic" prefHeight="31.0" prefWidth="181.0" text="Обрати зображення" /><Label layoutX="24.0" layoutY="466.0" text="** - зображення 800х300px">
+</Label><Button fx:id="idReadyPasport" layoutX="22.0" layoutY="405.0" mnemonicParsing="false" onAction="#BlockPasportData" prefHeight="33.0" prefWidth="132.0" text="Готово" /><Button fx:id="idEditPasport" layoutX="171.0" layoutY="404.0" mnemonicParsing="false" onAction="#ReleasePasportData" prefHeight="33.0" prefWidth="132.0" text="Редагувати" /><Button fx:id="idChooserPic" layoutX="238.0" layoutY="329.0" mnemonicParsing="false" onAction="#ChoosePic" prefHeight="31.0" prefWidth="181.0" text="Обрати зображення" /><Label layoutX="24.0" layoutY="466.0" text="** - зображення 800х300px">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>

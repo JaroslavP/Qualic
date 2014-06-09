@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><Pane prefHeight="27.0" prefWidth="749.0" style="-fx-background-color: #DADADA;">
+<children><Button mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Відновлення" /><Button fx:id="idGrafClose" layoutX="88.0" mnemonicParsing="false" onAction="#GrafClose" prefHeight="25.0" prefWidth="88.0" text="Закрити" />
+</children></Pane><LineChart layoutX="14.0" layoutY="27.0" prefHeight="403.0" prefWidth="709.0">
+  <xAxis>
+    <CategoryAxis side="BOTTOM" />
+  </xAxis>
+  <yAxis>
+    <NumberAxis side="LEFT" />
+  </yAxis>
+</LineChart>
+</children></AnchorPane>

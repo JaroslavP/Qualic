@@ -12,10 +12,19 @@
     <Menu mnemonicParsing="false" text="Об'кт">
       <items>
         <MenuItem fx:id="idNewBridge" mnemonicParsing="false" onAction="#createNewObject" text="Новий" />
-<MenuItem mnemonicParsing="false" onAction="#createBridge" text="Close" />
-<MenuItem mnemonicParsing="false" text="Close" />
+<MenuItem fx:id="idLoadXLS" mnemonicParsing="false" onAction="#LoadXLS" text="Завантажити *.xls" />
+<MenuItem fx:id="idLoadBD" mnemonicParsing="false" onAction="#LoadBD" text="Завантажити з БД" />
+<MenuItem fx:id="idSaveXLS" mnemonicParsing="false" onAction="#SaveXLS" text="Зберегти  *.xls" />
+<MenuItem fx:id="idSaveBD" mnemonicParsing="false" onAction="#SaveBD" text="Зберегти БД" />
+<MenuItem mnemonicParsing="false" onAction="#out" text="Вихід" />
       </items>
     </Menu>
+<Menu mnemonicParsing="false" text="Редагувати">
+<items>
+<MenuItem fx:id="idResours" mnemonicParsing="false" onAction="#Resours" text="Залишковий ресурс" />
+<MenuItem fx:id="idEdit" mnemonicParsing="false" onAction="#Edit" text="Редагувати" />
+</items>
+</Menu>
     <Menu mnemonicParsing="false" text="Вид">
       <items>
         <MenuItem fx:id="idToolBar" mnemonicParsing="false" onAction="#showToolBar" text="+ Панель інструментів" />
@@ -44,11 +53,6 @@
 </font></Label>
 </children></Pane><TabPane fx:id="idMainTab" layoutY="59.0" prefHeight="620.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
   <tabs>
-<Tab text="Експлуатаційні дані">
-<content>
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-</content>
-</Tab>
     <Tab text="Паспортні дані">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
@@ -222,6 +226,67 @@
 </Label><Label fx:id="idNoShema" layoutX="127.0" layoutY="269.0" />
 </children>
 </AnchorPane>
+</content>
+</Tab>
+<Tab text="Експлуатаційні дані">
+<content>
+<AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><Accordion focusTraversable="false" layoutX="150.0" layoutY="166.0" prefHeight="210.0" prefWidth="700.0">
+  <panes>
+    <TitledPane fx:id="idDeckInfo" expanded="false" layoutX="-92.0" layoutY="90.5" prefHeight="150.0">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="200.0">
+<children><Label fx:id="idd1" layoutX="14.0048828125" layoutY="14.0" text="Label" /><Label fx:id="idd2" layoutX="14.009765625" layoutY="38.5" text="Label" /><Label fx:id="idd3" layoutX="14.0146484375" layoutY="62.0" text="Label" /><Label fx:id="idd4" layoutX="335.0" layoutY="14.0" text="Label" /><Label fx:id="idd5" layoutX="335.0" layoutY="39.0" text="Label" />
+</children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="idSSInfo" animated="false" prefHeight="170.0" text="untitled 2">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="200.0">
+<children><Label fx:id="idSS1" layoutX="24.0" layoutY="11.0" text="Label" /><Label fx:id="idSS2" layoutX="24.0" layoutY="36.0" text="Label" /><Label fx:id="idSS3" layoutX="24.0" layoutY="61.0" text="Label" /><Label fx:id="idSS5" layoutX="335.0" layoutY="11.0" text="Label" /><Label fx:id="idSS6" layoutX="335.0" layoutY="36.0" text="Label" /><Label fx:id="idSS4" layoutX="24.0" layoutY="84.0" text="Label" /><Label fx:id="idSS7" layoutX="335.0" layoutY="61.0" text="Label" /><Label fx:id="idSS8" layoutX="335.0" layoutY="84.0" text="Label" />
+</children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="idRSInfo" animated="false" prefHeight="140.0" text="untitled 3">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="120.0" prefWidth="200.0">
+<children><Label fx:id="idRS1" layoutX="23.0" layoutY="14.0" text="Label" /><Label fx:id="idRS2" layoutX="23.0" layoutY="38.0" text="Label" /><Label fx:id="idRS3" layoutX="23.0" layoutY="62.0" text="Label" /><Label fx:id="idRS4" layoutX="23.0048828125" layoutY="86.5" text="Label" />
+</children></AnchorPane>
+      </content>
+    </TitledPane>
+<TitledPane fx:id="idSuppInfo" animated="false" layoutX="10.0" layoutY="60.0" maxWidth="100.0" text="untitled 3">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><Label fx:id="idS1" layoutX="29.0048828125" layoutY="21.5" text="Label" /><Label fx:id="idS2" layoutX="29.009765625" layoutY="46.0" text="Label" /><Label fx:id="idS3" layoutX="29.0146484375" layoutY="70.5" text="Label" />
+</children>
+</AnchorPane>
+</content>
+</TitledPane>
+  </panes>
+</Accordion><Label fx:id="idStan" layoutX="150.0" layoutY="54.0" text="Міст перебуває І експлуатаційному стані">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font></Label><Label fx:id="idWear" layoutX="150.0" layoutY="89.0" text="Загальна оцінка зносу 66%">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Label fx:id="idMove" layoutX="546.0" layoutY="54.0" text="Безпечна швидкість руху ">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Label fx:id="idLife" layoutX="546.0" layoutY="89.0" text="Термін експлуатації 77 років">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Text fx:id="idText" layoutX="150.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="700.0">
+<font>
+<Font name="Times New Roman" size="18.0" />
+</font></Text><Label fx:id="idLd" layoutX="150.0" layoutY="125.0" text="вантаж">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label>
+</children></AnchorPane>
 </content>
 </Tab>
   </tabs>
