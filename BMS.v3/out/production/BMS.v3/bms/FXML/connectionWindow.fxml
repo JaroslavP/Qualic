@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="bms.ConnectionController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="309.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <Button fx:id="idOK" layoutX="85.0" layoutY="241.0" mnemonicParsing="false" onAction="#sendConnectionData"
+            prefHeight="32.0" prefWidth="100.0" text="OK"/>
+    <Button fx:id="idClose" layoutX="196.0" layoutY="241.0" mnemonicParsing="false"
+            onAction="#closeConnectionWindow" prefHeight="32.0" prefWidth="100.0" text="Закрити"/>
+    <PasswordField fx:id="idPassword" layoutX="179.0" layoutY="96.0" promptText="пароль користувача"
+                   text="ultimatevision"/>
+    <TextField fx:id="idLogin" layoutX="179.0" layoutY="59.0" promptText="і'мя користувача бази"
+               text="postgres"/>
+    <TextField fx:id="idIP" layoutX="179.0" layoutY="136.0" promptText="ІР-адреса сервера" text="127.0.0.1"/>
+    <TextField fx:id="idPort" layoutX="179.0" layoutY="177.0" promptText="Порт підключення" text="5432/bms"/>
+    <Label layoutX="79.0" layoutY="62.0" text="Логін">
+        <font>
+            <Font name="Times New Roman" size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="78.0" layoutY="99.0" text="Пароль">
+        <font>
+            <Font name="Times New Roman" size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="79.0" layoutY="139.0" text="IP ">
+        <font>
+            <Font name="Times New Roman" size="18.0"/>
+        </font>
+    </Label>
+    <Label layoutX="76.0" layoutY="180.0" text="ПОРТ">
+        <font>
+            <Font name="Times New Roman" size="18.0"/>
+        </font>
+    </Label>
+</AnchorPane>
