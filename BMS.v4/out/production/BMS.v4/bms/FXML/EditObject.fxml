@@ -8,6 +8,61 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.EditObject">
 <children><TabPane layoutY="25.0" prefHeight="525.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE">
   <tabs>
+<Tab text="Елементи мосту">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children>
+<Separator layoutX="14.0" layoutY="444.0" prefHeight="9.0" prefWidth="658.0" />
+<Button layoutX="14.0" layoutY="405.0" mnemonicParsing="false" onAction="#BlockElem" prefHeight="33.0" prefWidth="132.0" text="Готово" />
+<Button layoutX="163.0" layoutY="405.0" mnemonicParsing="false" onAction="#Releaseelem" prefHeight="33.0" prefWidth="132.0" text="Редагувати" /><Accordion layoutX="27.0" layoutY="31.0" prefHeight="319.0" prefWidth="638.0">
+  <panes>
+    <TitledPane animated="false" prefHeight="236.0" prefWidth="638.0" text="Мостове полотно">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><Label layoutX="14.0" layoutY="48.0" text="Системи водовідведення">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font></Label><Label layoutX="15.0" layoutY="14.0" text="Покриття">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label><Label layoutX="16.0" layoutY="80.0" text="Деформаційні шви">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label><Label layoutX="18.0" layoutY="114.0" text="Огорожі">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label><Label layoutX="15.0" layoutY="144.0" text="Тротуари">
+<font>
+<Font name="Times New Roman" size="14.0" />
+</font>
+</Label><TextField layoutX="187.74609375" layoutY="9.5" /><TextField layoutX="188.0" layoutY="43.0" /><TextField layoutX="188.0" layoutY="75.0" /><TextField layoutX="188.0" layoutY="109.0" /><TextField layoutX="188.0" layoutY="139.0" />
+</children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" text="Прогонові споруди">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" text="Опори">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </TitledPane>
+<TitledPane animated="false" layoutX="10.0" layoutY="60.0" text="Регуляційні споруди">
+<content>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+</content>
+</TitledPane>
+  </panes>
+</Accordion>
+</children>
+</AnchorPane>
+</content>
+</Tab>
     <Tab text="Паспортні дані">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">

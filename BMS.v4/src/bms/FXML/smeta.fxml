@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.mageSmet">
+<children><Pane prefHeight="27.0" prefWidth="804.0" style="-fx-background-color: #DADADA;" AnchorPane.topAnchor="0.0">
+<children><Button fx:id="idFindCost" mnemonicParsing="false" onAction="#findCost" prefHeight="25.0" prefWidth="88.0" text="Розрахувати" /><Button fx:id="idCloseSmeta" layoutX="88.0" mnemonicParsing="false" onAction="#SmetaClose" prefHeight="25.0" prefWidth="88.0" text="Закрити" /><Label fx:id="idTotal" layoutX="188.0" layoutY="4.0">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font></Label>
+</children></Pane><TableView fx:id="idSmeta" layoutX="-1.0" layoutY="27.0" prefHeight="529.0" prefWidth="804.0">
+  <columns>
+    <TableColumn prefWidth="31.0" text="№" />
+    <TableColumn prefWidth="95.0" text="Елемент моста" />
+<TableColumn prefWidth="99.0" text="Матеріал" />
+<TableColumn prefWidth="75.0" text="Одиниці" />
+<TableColumn prefWidth="75.0" text="Кількість" />
+<TableColumn prefWidth="82.0" text="Вартість од. &#10;матеріалу" />
+<TableColumn prefWidth="98.0" text="Сумма витрат &#10;метеріалів" />
+<TableColumn prefWidth="78.0" text="Вартість од. &#10;матеріалу" />
+<TableColumn prefWidth="91.0" text="Сумма витрат &#10;на од. робіт" />
+<TableColumn prefWidth="91.0" text="Витрати&#10;" />
+  </columns>
+</TableView>
+</children></AnchorPane>

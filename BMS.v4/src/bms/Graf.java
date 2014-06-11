@@ -26,9 +26,11 @@ public class Graf implements Initializable {
     LineChart<Number, Number> Graph = new LineChart<Number, Number>(xAxis,yAxis);
     public AnchorPane idGrafPane;
     public static int category;
+    XYChart.Series series;
 
     public void GrafClose() {
         ((Stage) idGrafClose.getScene().getWindow()).close();
+        Controller.G = Graph;
     }
 
     @Override
@@ -55,8 +57,8 @@ public class Graf implements Initializable {
         xAxis.setLabel("Роки");
         yAxis.setLabel("Надійність");
 
-        XYChart.Series series = new XYChart.Series();
-        series.setName("Залишковий ресурс");
+        series = new XYChart.Series();
+        series.setName("Залишковий ресурс " + (category+1));
 
         Graph.getData().clear();
         Graph.setCreateSymbols(false);
@@ -99,7 +101,8 @@ public class Graf implements Initializable {
             int endYear = Controller.categiryForGraf.getBridgePasport().lifetime;
             double step = (endAlfa - Alfa)/(endYear - beginYear);
 
-            XYChart.Series series = new XYChart.Series();
+            series = new XYChart.Series();
+            series.setName("Залишковий ресурс " + (category+1));
 
             int i = 2014;
             double P = 1;

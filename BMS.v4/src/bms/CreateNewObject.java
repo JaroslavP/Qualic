@@ -190,9 +190,9 @@ public class CreateNewObject implements Initializable{
         if (SV4.isSelected()) drai += 2.37;      if (DH4.isSelected()) expJoins += 2.37;
         if (SV5.isSelected()) drai += 2.37;      if (DH5.isSelected()) expJoins += 8;
         if (O1.isSelected()) fen += 0.42;        if (T1.isSelected()) side += 0.42;
-        if (O2.isSelected()) fen += 0.42;        if (T1.isSelected()) side += 1;
-        if (O3.isSelected()) fen += 1;           if (T1.isSelected()) side += 2.37;
-        if (O4.isSelected()) fen += 2.37;        if (T1.isSelected()) side += 8;
+        if (O2.isSelected()) fen += 0.42;        if (T2.isSelected()) side += 1;
+        if (O3.isSelected()) fen += 1;           if (T3.isSelected()) side += 2.37;
+        if (O4.isSelected()) fen += 2.37;        if (T4.isSelected()) side += 8;
         return new Deck(coat, drai, expJoins, fen, side);
     }
 

@@ -1,13 +1,10 @@
 package bms;
 
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
-import javafx.scene.chart.NumberAxis;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TabPane;
@@ -15,22 +12,20 @@ import javafx.scene.control.TitledPane;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.scene.text.*;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable{
 
     public static Bridge categiryForGraf;
+    public static LineChart G = null;
 
     public Bridge bigBridge;
     public MenuItem idNewBridge;
@@ -89,16 +84,35 @@ public class Controller implements Initializable{
     }
 
     public void LoadXLS() {
+        Excel.controller = this;
+        Excel ex = new Excel();
+        bigBridge = ex.getExcelBridge();
+        cBridge();
+    }
 
+    public void SaveXLS() {
+        new SaveExcel(bigBridge);
     }
 
     public void LoadBD() {
     }
 
-    public void SaveXLS() {
+    public void SaveBD() {
     }
 
-    public void SaveBD() {
+    public void makeSmeta() {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("FXML/smeta.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Stage stage = new Stage();
+        stage.setTitle("Смета");
+        stage.setScene(new Scene(root, 794, 547));
+        stage.setResizable(false);
+        mageSmet.controller = this;
+        stage.show();
     }
 
     public void out() {
@@ -132,9 +146,6 @@ public class Controller implements Initializable{
         stage.setResizable(false);
         EditObject.Edit = this;
         stage.show();
-    }
-
-    public void makeSmeta(ActionEvent actionEvent) {
     }
 
     public void createNewObject() {
