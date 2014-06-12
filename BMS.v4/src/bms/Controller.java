@@ -1,5 +1,6 @@
 package bms;
 
+import bms.Bridge.Bridge;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -109,7 +110,7 @@ public class Controller implements Initializable{
         }
         Stage stage = new Stage();
         stage.setTitle("Смета");
-        stage.setScene(new Scene(root, 794, 547));
+        stage.setScene(new Scene(root, 885, 547));
         stage.setResizable(false);
         mageSmet.controller = this;
         stage.show();
@@ -142,7 +143,7 @@ public class Controller implements Initializable{
         }
         Stage stage = new Stage();
         stage.setTitle("Редагування");
-        stage.setScene(new Scene(root, 690, 540));
+        stage.setScene(new Scene(root, 700, 540));
         stage.setResizable(false);
         EditObject.Edit = this;
         stage.show();
