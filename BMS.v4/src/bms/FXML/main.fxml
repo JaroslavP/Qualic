@@ -19,7 +19,7 @@
 <MenuItem mnemonicParsing="false" onAction="#out" text="Вихід" />
       </items>
     </Menu>
-<Menu mnemonicParsing="false" text="Редагувати">
+<Menu mnemonicParsing="false" text="Ресурси">
 <items>
 <MenuItem fx:id="idResours" mnemonicParsing="false" onAction="#Resours" text="Залишковий ресурс" />
 <MenuItem fx:id="idSmeta" mnemonicParsing="false" onAction="#makeSmeta" text="СМЕТА" />

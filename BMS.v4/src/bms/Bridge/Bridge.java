@@ -1,7 +1,5 @@
 package bms.Bridge;
 
-import bms.BridgePasport;
-
 import java.util.ArrayList;
 
 public class Bridge {
@@ -179,33 +177,5 @@ public class Bridge {
 
     public Rating getRating() {
         return rating;
-    }
-
-    public void setBridgePasport(BridgePasport bridgePasport) {
-        this.bridgePasport = bridgePasport;
-    }
-
-    public void setSpecific(Specific specific) {
-        this.specific = specific;
-    }
-
-    public void setRating(Rating rating) {
-        this.rating = rating;
-    }
-
-    public void setDeck(Deck deck) {
-        this.deck = deck;
-    }
-
-    public void setSuperStructure(SuperStructure superStructure) {
-        this.superStructure = superStructure;
-    }
-
-    public void setRegulatoryStructure(RegulatoryStructure regulatoryStructure) {
-        this.regulatoryStructure = regulatoryStructure;
-    }
-
-    public void setSupport(Support support) {
-        this.support = support;
     }
 }

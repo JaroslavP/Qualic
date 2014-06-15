@@ -96,9 +96,14 @@ public class Controller implements Initializable{
     }
 
     public void LoadBD() {
+
     }
 
-    public void SaveBD() {
+    public void SaveBD() throws SQLException {
+        Insetr in = new Insetr();
+        Insetr.controller = this;
+        in.insert();
+        //in.insetSpecific();
     }
 
     public void makeSmeta() {

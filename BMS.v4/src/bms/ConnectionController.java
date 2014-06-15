@@ -17,6 +17,7 @@ public class ConnectionController {
     public Button idOK;
     public Button idClose;
     public static Label lll;
+    public static Controller controller;
 
     public void sendConnectionData() {
         try {

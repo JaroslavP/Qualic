@@ -1,6 +1,7 @@
 package bms;
 
 import bms.Bridge.Bridge;
+import bms.Bridge.BridgePasport;
 import bms.Bridge.Specific;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
