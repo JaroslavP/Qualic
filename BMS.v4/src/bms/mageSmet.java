@@ -12,6 +12,8 @@ import javafx.stage.Stage;
 import jfx.messagebox.MessageBox;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.DoubleSummaryStatistics;
 import java.util.ResourceBundle;
 
 public class mageSmet implements Initializable {
@@ -27,10 +29,11 @@ public class mageSmet implements Initializable {
     public Button idCloseSmeta;
     public Pane idP;
     int count = 0;
+    ArrayList<SMETA> smetas;
+
 
     public void SmetaClose() {
         try {
-            MessageBox.show(idCloseSmeta.getScene().getWindow(), "Завершити роботу ? ? ?", "Warning", MessageBox.ICON_QUESTION);
             ((Stage) idCloseSmeta.getScene().getWindow()).close();
         } catch (Exception ignored) {
 
@@ -207,8 +210,28 @@ public class mageSmet implements Initializable {
         idScroll.setContent(idGrid);
         idScroll.setPrefSize(895,529);
         idPane.getChildren().addAll(idGrid, idScroll);
-        //if (!(controller.bigBridge.smeta == null)) {
-            //System.out.println("afsdfsd");
-        //}
+        if (Controller.categiryForGraf.smeta.size() != 0) {
+            for (int i = 0; i < Controller.categiryForGraf.smeta.size() ; i++) {
+                added();
+            }
+            int ccc = 0;
+            for (Node node : idGrid.getChildren()) {
+                ((TextField)(((HBox) node).getChildren().get(1))).setText(Controller.categiryForGraf.smeta.get(ccc).BridgeElement);
+                ((TextField)(((HBox) node).getChildren().get(2))).setText(Controller.categiryForGraf.smeta.get(ccc).Name);
+                ((TextField)(((HBox) node).getChildren().get(3))).setText(Double.toString(Controller.categiryForGraf.smeta.get(ccc).unit));
+                ((TextField)(((HBox) node).getChildren().get(4))).setText(String.valueOf(Controller.categiryForGraf.smeta.get(ccc).number));
+                ((TextField)(((HBox) node).getChildren().get(5))).setText(String.valueOf(Controller.categiryForGraf.smeta.get(ccc).numberCost));
+                ((TextField)(((HBox) node).getChildren().get(6))).setText(String.valueOf(Controller.categiryForGraf.smeta.get(ccc).unitWork));
+                ((TextField)(((HBox) node).getChildren().get(7))).setText(String.valueOf(Controller.categiryForGraf.smeta.get(ccc).sumNumbercost));
+                ((TextField)(((HBox) node).getChildren().get(8))).setText(String.valueOf(Controller.categiryForGraf.smeta.get(ccc).sumUnitWork));
+                ((TextField)(((HBox) node).getChildren().get(9))).setText(String.valueOf(Controller.categiryForGraf.smeta.get(ccc).total));
+                ccc++;
+            }
+            double sum = 0;
+            for (SMETA smeta : Controller.categiryForGraf.smeta) {
+                sum += smeta.total;
+            }
+            idTotal.setText(String.valueOf((sum)));
+        }
     }
 }

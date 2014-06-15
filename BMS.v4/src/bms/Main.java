@@ -13,7 +13,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("FXML/main.fxml"));
         primaryStage.setTitle("BMS");
         primaryStage.setResizable(false);
-        primaryStage.setScene(new Scene(root, 990, 685));
+        primaryStage.setScene(new Scene(root, 1014, 685));
         primaryStage.show();
     }
 

@@ -4,10 +4,7 @@ import bms.Bridge.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -25,6 +22,8 @@ public class CreateNewObject implements Initializable{
     public Button closeButton;
     boolean P = false;
     boolean S = false;
+    public static Label lll;
+
     // PASSPORT
     public TextField idBridgeName;          public ComboBox<Integer> idInput;
     public TextField idBarrier;             public TextField idCompany;
@@ -334,7 +333,11 @@ public class CreateNewObject implements Initializable{
         } else {
             control.bigBridge = new Bridge(makeBP(), makeSpecific(), makeDeck(),
                     makeSuperStructure(), makeRS(), makeSupport());
+            lll.setText("Об'єкт успішно створено");
             control.cBridge();
+            control.idResours.setDisable(false);
+            control.idSmeta.setDisable(false);
+            control.idSaveXLS.setDisable(false);
             control.idStatusString.setText("!: Об'єкт успішно створенно.");
             ((Stage)createButton.getScene().getWindow()).close();
         }

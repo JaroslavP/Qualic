@@ -6,12 +6,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
-import javafx.scene.control.Label;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.TabPane;
-import javafx.scene.control.TitledPane;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -21,6 +19,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable{
@@ -48,8 +47,6 @@ public class Controller implements Initializable{
     public Label idfen;     public Label idwfen;
     public Label idangl;    public Label idload;
     public Label idNoShema;
-    // VIEW
-    public MenuItem idToolBar;      public MenuItem idStatusBar;
     public Pane idToolBarPane;      public Pane idStatusBarPane;
     // EXP
     public Label idStan;    public Label idWear;
@@ -72,38 +69,60 @@ public class Controller implements Initializable{
     public Label idS3;
     // MENU
     public MenuItem idLoadXLS;
-    public MenuItem idLoadBD;
     public MenuItem idSaveXLS;
     public MenuItem idSaveBD;
     public MenuItem idResours;
-    public MenuItem idEdit;
+    public ArrayList<Integer> ids = new ArrayList<Integer>();
+    public ArrayList<String> info = new ArrayList<String>();
+    public Pane idTreePane;
+    public ScrollPane sp;
+    public GridPane gp;
+    public Label idBD;
+    public ImageView idIcon;
+    public MenuItem idDeleteRecord;
+    public BD bd;
+    public MenuItem idConn;
+    public MenuItem idDiscon;
+    public MenuItem idSmeta;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         idStatusString.setText("!: Немає даних для відображення.");
+        idIcon.setImage(new Image(Main.class.getResourceAsStream("treeIcon.png")));
         idMainTab.setDisable(true);
+        idTreePane.setDisable(true);
+        idSaveBD.setDisable(true);
+        idDeleteRecord.setDisable(true);
+        idSaveXLS.setDisable(true);
+        idResours.setDisable(true);
+        idSmeta.setDisable(true);
+        idDiscon.setDisable(true);
     }
 
     public void LoadXLS() {
         Excel.controller = this;
         Excel ex = new Excel();
         bigBridge = ex.getExcelBridge();
+        idResours.setDisable(false);
+        idSmeta.setDisable(false);
+        idStatusString.setText("Дані зчитано успішно!");
         cBridge();
     }
 
     public void SaveXLS() {
+        SaveExcel.lll = idStatusString;
         new SaveExcel(bigBridge);
     }
 
-    public void LoadBD() {
-
+    public void DeleteBD() {
+        bd.delete();
     }
 
     public void SaveBD() throws SQLException {
         Insetr in = new Insetr();
         Insetr.controller = this;
+        Insetr.lll = idStatusString;
         in.insert();
-        //in.insetSpecific();
     }
 
     public void makeSmeta() {
@@ -139,21 +158,6 @@ public class Controller implements Initializable{
         stage.show();
     }
 
-    public void Edit() {
-        Parent root = null;
-        try {
-            root = FXMLLoader.load(getClass().getResource("FXML/EditObject.fxml"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Stage stage = new Stage();
-        stage.setTitle("Редагування");
-        stage.setScene(new Scene(root, 700, 540));
-        stage.setResizable(false);
-        EditObject.Edit = this;
-        stage.show();
-    }
-
     public void createNewObject() {
         Parent root = null;
         try {
@@ -166,6 +170,7 @@ public class Controller implements Initializable{
         stage.setScene(new Scene(root, 690, 540));
         stage.setResizable(false);
         CreateNewObject.control = this;
+        CreateNewObject.lll = idStatusString;
         stage.show();
     }
 
@@ -180,13 +185,22 @@ public class Controller implements Initializable{
         stage.setTitle("Підключення БД");
         stage.setScene(new Scene(root));
         stage.setResizable(false);
+        BD.controller = this;
+        bd = new BD();
+        BD.lll = idStatusString;
         ConnectionController.lll = idStatusString;
+        ConnectionController.controller = this;
         stage.show();
     }
 
     public void disconnectDB(){
         try {
             connect.close();
+            idConn.setDisable(false);
+            idSaveBD.setDisable(true);
+            idDeleteRecord.setDisable(true);
+            idDiscon.setDisable(true);
+            idSaveXLS.setDisable(true);
             idStatusString.setText("!: Зєднання з БД відключенно");
         } catch (SQLException e) {
             e.printStackTrace();
@@ -282,10 +296,10 @@ public class Controller implements Initializable{
                     "Вживаються тимчасові заходи до запобігання аварії");
         }
         idStan.setText("Міст перебуває в " + str + " експлуатаційному стані");
-        idWear.setText("Загальна оцінка зносу " + Math.rint(bigBridge.getRating().wear*100)/100 + "%");
+        idWear.setText("Загальна оцінка зносу елементів " + Math.rint(bigBridge.getRating().wear*100)/100 + "%");
         idMove.setText(bigBridge.getRating().safety);
-        idLife.setText("Термін експлуатації " + bigBridge.getRating().longevity);
-        idLd.setText("Зниження вантажопідйомності " + Math.rint(bigBridge.getRating().capacity*100)/100 + "%");
+        idLife.setText("Залишковий термін експлуатації " + bigBridge.getRating().longevity);
+        idLd.setText("Зниження вантажопідйомності на " + Math.rint(bigBridge.getRating().capacity*100)/100 + "%");
         idDeckInfo.setExpanded(true);
         idDeckInfo.setText("Оцінка мостового полотна " + Math.rint(bigBridge.getRating().rDeck*100)/100 + "%");
             idd1.setText("Покриття " +  Math.rint(bigBridge.getDeck().coating*100)/100 + "%");
@@ -311,33 +325,6 @@ public class Controller implements Initializable{
             idRS2.setText("Колії на поверхні покриття " +  Math.rint(bigBridge.getRegulatoryStructure().track*100)/100 + "%");
             idRS3.setText("Зниження швидкості руху " +  Math.rint(bigBridge.getRegulatoryStructure().speedLimit*100)/100 + "%");
             idRS4.setText("Втрати конусом об'єму " +  Math.rint(bigBridge.getRegulatoryStructure().cone*100)/100 + "%");
-
         categiryForGraf = bigBridge;
-    }
-
-    public void showToolBar() {
-        if (idToolBarPane.isVisible()) {
-            idToolBar.setText("Панель інструментів");
-            idToolBarPane.setVisible(false);
-            idToolBarPane.setDisable(true);
-            idMainTab.setLayoutY(25);
-        } else {
-            idToolBarPane.setDisable(false);
-            idToolBar.setText("+ Панель інструментів");
-            idMainTab.setLayoutY(59);
-            idToolBarPane.setVisible(true);
-        }
-    }
-
-    public void showStatusBar() {
-        if (idStatusBarPane.isVisible()) {
-            idStatusBar.setText("Рядок стану");
-            idStatusBarPane.setVisible(false);
-            idStatusBarPane.setDisable(true);
-        }else {
-            idStatusBar.setText("+ Рядок стану");
-            idStatusBarPane.setVisible(true);
-            idStatusBarPane.setDisable(false);
-        }
     }
 }

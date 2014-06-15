@@ -6,16 +6,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.Controller">
-<children><MenuBar prefWidth="1000.0">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.Controller">
+<children><MenuBar prefWidth="1024.0">
   <menus>
     <Menu mnemonicParsing="false" text="Об'кт">
       <items>
         <MenuItem fx:id="idNewBridge" mnemonicParsing="false" onAction="#createNewObject" text="Новий" />
 <MenuItem fx:id="idLoadXLS" mnemonicParsing="false" onAction="#LoadXLS" text="Завантажити *.xls" />
-<MenuItem fx:id="idLoadBD" mnemonicParsing="false" onAction="#LoadBD" text="Завантажити з БД" />
 <MenuItem fx:id="idSaveXLS" mnemonicParsing="false" onAction="#SaveXLS" text="Зберегти  *.xls" />
 <MenuItem fx:id="idSaveBD" mnemonicParsing="false" onAction="#SaveBD" text="Зберегти БД" />
+<MenuItem fx:id="idDeleteRecord" mnemonicParsing="false" onAction="#DeleteBD" text="Видалити запис" />
 <MenuItem mnemonicParsing="false" onAction="#out" text="Вихід" />
       </items>
     </Menu>
@@ -25,16 +25,10 @@
 <MenuItem fx:id="idSmeta" mnemonicParsing="false" onAction="#makeSmeta" text="СМЕТА" />
 </items>
 </Menu>
-    <Menu mnemonicParsing="false" text="Вид">
-      <items>
-        <MenuItem fx:id="idToolBar" mnemonicParsing="false" onAction="#showToolBar" text="+ Панель інструментів" />
-<MenuItem fx:id="idStatusBar" mnemonicParsing="false" onAction="#showStatusBar" text="+ Рядок стану" />
-      </items>
-    </Menu>
     <Menu mnemonicParsing="false" text="База Днаних">
       <items>
-        <MenuItem mnemonicParsing="false" onAction="#connectDB" text="Підключитись" />
-<MenuItem mnemonicParsing="false" onAction="#disconnectDB" text="Відключитись" />
+        <MenuItem fx:id="idConn" mnemonicParsing="false" onAction="#connectDB" text="Підключитись" />
+<MenuItem fx:id="idDiscon" mnemonicParsing="false" onAction="#disconnectDB" text="Відключитись" />
       </items>
     </Menu>
 <Menu mnemonicParsing="false" text="?">
@@ -43,98 +37,96 @@
 </items>
 </Menu>
   </menus>
-</MenuBar><Pane fx:id="idToolBarPane" layoutY="25.0" prefHeight="34.0" prefWidth="1000.0" style="-fx-background-color: #D3D3D3;">
-<children><Button layoutX="26.1875" layoutY="7.5" mnemonicParsing="false" text="Button" />
-</children></Pane><Pane fx:id="idStatusBarPane" layoutY="678.0" prefHeight="17.0" prefWidth="1000.0" style="-fx-background-color: #D3D3D3;">
+</MenuBar><Pane fx:id="idToolBarPane" layoutY="25.0" prefHeight="34.0" prefWidth="1024.0" style="-fx-background-color: #D3D3D3;" /><Pane fx:id="idStatusBarPane" layoutY="678.0" prefHeight="17.0" prefWidth="1024.0" style="-fx-background-color: #D3D3D3;">
 <children><Label fx:id="idStatusString" layoutX="5.0">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font></Label>
-</children></Pane><TabPane fx:id="idMainTab" layoutY="59.0" prefHeight="620.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+</children></Pane><TabPane fx:id="idMainTab" layoutX="200.0" layoutY="59.0" prefHeight="620.0" prefWidth="824.0" tabClosingPolicy="UNAVAILABLE">
   <tabs>
     <Tab text="Паспортні дані">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-<children><ImageView fx:id="idPassportPicture" fitHeight="300.0" fitWidth="800.0" layoutX="100.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" /><Label layoutX="127.0" layoutY="58.0" text="Назва:">
+<children><ImageView fx:id="idPassportPicture" fitHeight="300.0" fitWidth="800.0" layoutX="14.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" /><Label layoutX="41.0" layoutY="58.0" style="-fx-background-color: #FFFFFF;" text="Назва:">
 <font>
 <Font name="Times New Roman" size="16.0" />
-</font></Label><Label fx:id="idpn" layoutX="349.0" layoutY="59.0" text="No information">
-<font>
-<Font name="Times New Roman" size="16.0" />
-</font>
-</Label><Label layoutX="127.0" layoutY="93.0" text="Перешкода:">
+</font></Label><Label fx:id="idpn" layoutX="263.0" layoutY="59.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idbr" layoutX="349.0" layoutY="93.0" text="No information">
+</Label><Label layoutX="41.0" layoutY="93.0" text="Перешкода:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="127.0" layoutY="123.0" text="Категорія:">
+</Label><Label fx:id="idbr" layoutX="263.0" layoutY="93.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idct" layoutX="349.0" layoutY="123.0" text="No information">
+</Label><Label layoutX="41.0" layoutY="123.0" text="Категорія:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="127.0" layoutY="153.0" text="Кількість смуг руху:">
+</Label><Label fx:id="idct" layoutX="263.0" layoutY="123.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idln" layoutX="349.0" layoutY="153.0" text="No information">
+</Label><Label layoutX="41.0" layoutY="153.0" text="Кількість смуг руху:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="127.0" layoutY="185.0" text="Найближчий населений пункт:">
+</Label><Label fx:id="idln" layoutX="263.0" layoutY="153.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idlc" layoutX="349.0" layoutY="185.0" text="No information">
+</Label><Label layoutX="41.0" layoutY="185.0" text="Найближчий населений пункт:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="555.0" layoutY="60.0" text="Відстань до нього:">
+</Label><Label fx:id="idlc" layoutX="263.0" layoutY="185.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="iddl" layoutX="774.0" layoutY="61.0" text="No information">
+</Label><Label layoutX="469.0" layoutY="60.0" text="Відстань до нього:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="555.0" layoutY="95.0" text="Рік введення в експлуатацію:">
+</Label><Label fx:id="iddl" layoutX="688.0" layoutY="61.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idiy" layoutX="774.0" layoutY="95.0" text="No information">
+</Label><Label layoutX="469.0" layoutY="95.0" text="Рік введення в експлуатацію:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="555.0" layoutY="125.0" text="Будівельна компанія:">
+</Label><Label fx:id="idiy" layoutX="688.0" layoutY="95.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idcm" layoutX="774.0" layoutY="125.0" text="No information">
+</Label><Label layoutX="469.0" layoutY="125.0" text="Будівельна компанія:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="555.0" layoutY="155.0" text="Закінчення експлуатації:">
+</Label><Label fx:id="idcm" layoutX="688.0" layoutY="125.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idlt" layoutX="774.0" layoutY="155.0" text="No information">
+</Label><Label layoutX="469.0" layoutY="155.0" text="Закінчення експлуатації:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label layoutX="555.0" layoutY="187.0" text="Останнії огляд:">
+</Label><Label fx:id="idlt" layoutX="688.0" layoutY="155.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idrp" layoutX="774.0" layoutY="187.0" text="No information">
+</Label><Label layoutX="469.0" layoutY="187.0" text="Останнії огляд:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idNoPic" layoutX="127.0" layoutY="260.0" />
+</Label><Label fx:id="idrp" layoutX="688.0" layoutY="187.0" text="No information">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Label fx:id="idNoPic" layoutX="41.0" layoutY="260.0" />
 </children></AnchorPane>
       </content>
     </Tab>
@@ -142,87 +134,87 @@
 <content>
 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
 <children>
-<ImageView fx:id="idSpecificationShema" fitHeight="300.0" fitWidth="800.0" layoutX="100.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
-<Label layoutX="157.0" layoutY="59.0" text="Довжина:">
+<ImageView fx:id="idSpecificationShema" fitHeight="300.0" fitWidth="800.0" layoutX="14.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
+<Label layoutX="71.0" layoutY="59.0" text="Довжина:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idlen" layoutX="379.0" layoutY="61.0" text="No information">
+<Label fx:id="idlen" layoutX="293.0" layoutY="61.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label layoutX="157.0" layoutY="96.0" text="Ширина проїжджої частини:">
+<Label layoutX="71.0" layoutY="96.0" text="Ширина проїжджої частини:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idroad" layoutX="379.0" layoutY="96.0" text="No information">
+<Label fx:id="idroad" layoutX="293.0" layoutY="96.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label layoutX="157.0" layoutY="131.0" text="Ширина лівого тротуару:">
+<Label layoutX="71.0" layoutY="131.0" text="Ширина лівого тротуару:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idlroad" layoutX="379.0" layoutY="131.0" text="No information">
+<Label fx:id="idlroad" layoutX="293.0" layoutY="131.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label layoutX="157.0" layoutY="165.0" text="Ширина правого тротуару:">
+<Label layoutX="71.0" layoutY="165.0" text="Ширина правого тротуару:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idrroad" layoutX="379.0" layoutY="165.0" text="No information">
+<Label fx:id="idrroad" layoutX="293.0" layoutY="165.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label layoutX="585.0" layoutY="62.0" text="Огорожа:">
+<Label layoutX="499.0" layoutY="62.0" text="Огорожа:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idfen" layoutX="772.0" layoutY="62.0" text="No information">
+<Label fx:id="idfen" layoutX="686.0" layoutY="62.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label layoutX="585.0" layoutY="96.0" text="Перила:">
+<Label layoutX="499.0" layoutY="96.0" text="Перила:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idwfen" layoutX="772.0" layoutY="96.0" text="No information">
+<Label fx:id="idwfen" layoutX="686.0" layoutY="96.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label layoutX="585.0" layoutY="131.0" text="Кут нахилу:">
+<Label layoutX="499.0" layoutY="131.0" text="Кут нахилу:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idangl" layoutX="772.0" layoutY="131.0" text="No information">
+<Label fx:id="idangl" layoutX="686.0" layoutY="131.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label layoutX="585.0" layoutY="165.0" text="Вантажопідйомність:">
+<Label layoutX="499.0" layoutY="165.0" text="Вантажопідйомність:">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
 </Label>
-<Label fx:id="idload" layoutX="772.0" layoutY="165.0" text="No information">
+<Label fx:id="idload" layoutX="686.0" layoutY="165.0" text="No information">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idNoShema" layoutX="127.0" layoutY="269.0" />
+</Label><Label fx:id="idNoShema" layoutX="41.0" layoutY="269.0" />
 </children>
 </AnchorPane>
 </content>
@@ -230,7 +222,7 @@
 <Tab text="Експлуатаційні дані">
 <content>
 <AnchorPane focusTraversable="true" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-<children><Accordion focusTraversable="false" layoutX="150.0" layoutY="166.0" prefHeight="210.0" prefWidth="700.0">
+<children><Accordion focusTraversable="false" layoutX="23.0" layoutY="165.0" prefHeight="210.0" prefWidth="700.0">
   <panes>
     <TitledPane fx:id="idDeckInfo" expanded="false" layoutX="-92.0" layoutY="90.5" prefHeight="150.0">
       <content>
@@ -262,25 +254,25 @@
 </content>
 </TitledPane>
   </panes>
-</Accordion><Label fx:id="idStan" layoutX="150.0" layoutY="54.0" text="Міст перебуває І експлуатаційному стані">
+</Accordion><Label fx:id="idStan" layoutX="23.0" layoutY="53.0" text="Міст перебуває І експлуатаційному стані">
 <font>
 <Font name="Times New Roman" size="16.0" />
-</font></Label><Label fx:id="idWear" layoutX="150.0" layoutY="89.0" text="Загальна оцінка зносу 66%">
-<font>
-<Font name="Times New Roman" size="16.0" />
-</font>
-</Label><Label fx:id="idMove" layoutX="546.0" layoutY="54.0" text="Безпечна швидкість руху ">
+</font></Label><Label fx:id="idWear" layoutX="23.0" layoutY="88.0" text="Загальна оцінка зносу 66%">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Label fx:id="idLife" layoutX="546.0" layoutY="89.0" text="Термін експлуатації 77 років">
+</Label><Label fx:id="idMove" layoutX="419.0" layoutY="53.0" text="Безпечна швидкість руху ">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
-</Label><Text fx:id="idText" layoutX="150.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="700.0">
+</Label><Label fx:id="idLife" layoutX="419.0" layoutY="88.0" text="Термін експлуатації 77 років">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font>
+</Label><Text fx:id="idText" layoutX="23.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="700.0">
 <font>
 <Font name="Times New Roman" size="18.0" />
-</font></Text><Label fx:id="idLd" layoutX="150.0" layoutY="125.0" text="вантаж">
+</font></Text><Label fx:id="idLd" layoutX="23.0" layoutY="124.0" text="вантаж">
 <font>
 <Font name="Times New Roman" size="16.0" />
 </font>
@@ -289,5 +281,10 @@
 </content>
 </Tab>
   </tabs>
-</TabPane>
+</TabPane><Pane fx:id="idTreePane" layoutY="59.0" prefHeight="620.0" prefWidth="200.0">
+<children><Label fx:id="idBD" layoutX="49.0" layoutY="14.0" text="БАЗА ДАНИХ">
+<font>
+<Font name="Times New Roman" size="16.0" />
+</font></Label><ImageView fx:id="idIcon" fitHeight="32.0" fitWidth="32.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+</children></Pane>
 </children></AnchorPane>

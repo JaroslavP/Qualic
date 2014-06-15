@@ -6,7 +6,7 @@ public class Bridge {
 
     private BridgePasport bridgePasport;
     private Specific specific;
-    private Rating rating;
+    public Rating rating;
     private Deck deck;
     private SuperStructure superStructure;
     private RegulatoryStructure regulatoryStructure;
@@ -22,6 +22,7 @@ public class Bridge {
         superStructure = ssValue;
         regulatoryStructure = rS;
         support = supp;
+        smeta = null;
     }
 
     public void createRating () {
@@ -134,16 +135,16 @@ public class Bridge {
             rating.longevity = "до " + temp2 + " років";
             intLongevity = 1;
         } else if ((temp > 2) && (temp <= 10)) {
-            rating.longevity = "до " + temp2*0.9 + "-" + temp2 + " років";
+            rating.longevity = "до " + temp2 + " років";
             intLongevity = 2;
         } else if ((temp > 10) && (temp <= 30)) {
-            rating.longevity = "до " + temp2*0.75 + "-" + temp2*0.9 + " років";
+            rating.longevity = "до " + temp2*0.85 + " років";
             intLongevity = 3;
         } else if ((temp > 30) && (temp <= 55)) {
-            rating.longevity = "до " + temp2*0.5 + "-" + temp2*0.75 + " років";
+            rating.longevity = "до " + temp2*0.75 + " років";
             intLongevity = 4;
         } else if (temp > 55) {
-            rating.longevity = "менше " + temp2*0.5 + " років";
+            rating.longevity = "до " + temp2*0.5 + " років";
             intLongevity = 5;
         }
         // CATEGORY STATUS

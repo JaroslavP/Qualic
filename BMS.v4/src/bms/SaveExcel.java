@@ -2,6 +2,7 @@ package bms;
 
 import bms.Bridge.Bridge;
 import bms.Bridge.SMETA;
+import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -13,6 +14,7 @@ import java.io.FileOutputStream;
 
 public class SaveExcel {
 
+    public static Label lll;
     private Bridge BBB;
     private int count;
 
@@ -48,7 +50,7 @@ public class SaveExcel {
                 File choosenFile = fileChooser.showSaveDialog(null);
                 FileOutputStream out = new FileOutputStream(choosenFile.getAbsolutePath());
                 myWorkBook.write(out);
-
+                lll.setText("Дані збережено");
                 out.close();
             }catch(Exception e){ e.printStackTrace();}
         } catch (Exception ignored) {

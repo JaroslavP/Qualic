@@ -1,0 +1,6 @@
+.labelOn {
+    -fx-background-color: aqua;
+}
+.labelOff {
+    -fx-background-color: #FFFFFF;
+}
