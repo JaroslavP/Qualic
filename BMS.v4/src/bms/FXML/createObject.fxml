@@ -190,7 +190,7 @@
 <TitledPane animated="false" layoutX="10.0" layoutY="85.0" prefHeight="200.0" prefWidth="648.0" text="Трогтуари">
 <content>
 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-<children><CheckBox fx:id="T1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Тріщини в покритті на стиких тротуарних плит з рокриттям до 5мм" /><CheckBox fx:id="T2" layoutX="14.0" layoutY="46.0" mnemonicParsing="false" text="Руйнування покриття" /><CheckBox fx:id="T3" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" text="Оголення і корозія арматури" /><CheckBox fx:id="T4" layoutX="14.0" layoutY="108.0" mnemonicParsing="false" text="Проломи тротуарних плит" />
+<children><CheckBox fx:id="T1" layoutX="14.2890625" layoutY="14.0" mnemonicParsing="false" text="Тріщини в покритті на стиках тротуарних плит з рокриттям до 5мм" /><CheckBox fx:id="T2" layoutX="14.0" layoutY="46.0" mnemonicParsing="false" text="Руйнування покриття" /><CheckBox fx:id="T3" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" text="Оголення і корозія арматури" /><CheckBox fx:id="T4" layoutX="14.0" layoutY="108.0" mnemonicParsing="false" text="Проломи тротуарних плит" />
 </children>
 </AnchorPane>
 </content>

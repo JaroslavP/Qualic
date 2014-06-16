@@ -339,7 +339,6 @@ public class CreateNewObject implements Initializable{
             control.idResours.setDisable(false);
             control.idSmeta.setDisable(false);
             control.idSaveXLS.setDisable(false);
-            control.idStatusString.setText("!: Об'єкт успішно створенно.");
             ((Stage)createButton.getScene().getWindow()).close();
         }
     }
@@ -477,79 +476,79 @@ public class CreateNewObject implements Initializable{
         idAngle.setEditable(true);     idFLoad.setEditable(true);
     }
 
-//    public void blockDeck() {
-//        idKoliynist.setDisable(true);   idNapluvy.setDisable(true);
-//        idDamage.setDisable(true);      idVizd.setDisable(true);
-//        SV1.setDisable(true);    SV2.setDisable(true);
-//        SV3.setDisable(true);    SV4.setDisable(true);
-//        SV5.setDisable(true);    DH1.setDisable(true);
-//        DH2.setDisable(true);    DH3.setDisable(true);
-//        DH4.setDisable(true);    DH5.setDisable(true);
-//        O1.setDisable(true);     O2.setDisable(true);
-//        O3.setDisable(true);     O4.setDisable(true);
-//        T1.setDisable(true);     T2.setDisable(true);
-//        T3.setDisable(true);     T4.setDisable(true);
-//    }
-//
-//    public void ReleaseDeck() {
-//        idKoliynist.setDisable(false);   idNapluvy.setDisable(false);
-//        idDamage.setDisable(false);      idVizd.setDisable(false);
-//        SV1.setDisable(false);    SV2.setDisable(false);
-//        SV3.setDisable(false);    SV4.setDisable(false);
-//        SV5.setDisable(false);    DH1.setDisable(false);
-//        DH2.setDisable(false);    DH3.setDisable(false);
-//        DH4.setDisable(false);    DH5.setDisable(false);
-//        O1.setDisable(false);     O2.setDisable(false);
-//        O3.setDisable(false);     O4.setDisable(false);
-//        T1.setDisable(false);     T2.setDisable(false);
-//        T3.setDisable(false);     T4.setDisable(false);
-//    }
-//
-//    public void blockSuper() {
-//        ss1.setDisable(true);   ss2.setDisable(true);
-//        ss3.setDisable(true);   ss4.setDisable(true);
-//        ss5.setDisable(true);   ss6.setDisable(true);
-//        ss7.setDisable(true);   ss8.setDisable(true);
-//    }
-//
-//    public void ReleaseSuper() {
-//        ss1.setDisable(false);   ss2.setDisable(false);
-//        ss3.setDisable(false);   ss4.setDisable(false);
-//        ss5.setDisable(false);   ss6.setDisable(false);
-//        ss7.setDisable(false);   ss8.setDisable(false);
-//    }
-//
-//    public void blockSupport() {
-//        Rg1.setDisable(true);   Rg4.setDisable(true);
-//        Rg2.setDisable(true);   Rg5.setDisable(true);
-//        Rg3.setDisable(true);   Rg6.setDisable(true);
-//        to1.setDisable(true);   to2.setDisable(true);
-//        to3.setDisable(true);   to4.setDisable(true);
-//        to5.setDisable(true);   to6.setDisable(true);
-//        to7.setDisable(true);   f1.setDisable(true);
-//        f2.setDisable(true);    f3.setDisable(true);
-//        f4.setDisable(true);    f5.setDisable(true);
-//    }
-//
-//    public void ReleaseSupport() {
-//        Rg1.setDisable(false);   Rg4.setDisable(false);
-//        Rg2.setDisable(false);   Rg5.setDisable(false);
-//        Rg3.setDisable(false);   Rg6.setDisable(false);
-//        to1.setDisable(false);   to2.setDisable(false);
-//        to3.setDisable(false);   to4.setDisable(false);
-//        to5.setDisable(false);   to6.setDisable(false);
-//        to7.setDisable(false);   f1.setDisable(false);
-//        f2.setDisable(false);    f3.setDisable(false);
-//        f4.setDisable(false);    f5.setDisable(false);
-//    }
-//
-//    public void blockRegulatoryStructure() {
-//        RS1.setDisable(true);   RS2.setDisable(true);
-//        RS3.setDisable(true);   RS4.setDisable(true);
-//    }
-//
-//    public void ReleaseRegulatorystructure() {
-//        RS1.setDisable(false);   RS2.setDisable(false);
-//        RS3.setDisable(false);   RS4.setDisable(false);
-//    }
+    public void blockDeck() {
+        idKoliynist.setDisable(true);   idNapluvy.setDisable(true);
+        idDamage.setDisable(true);      idVizd.setDisable(true);
+        SV1.setDisable(true);    SV2.setDisable(true);
+        SV3.setDisable(true);    SV4.setDisable(true);
+        SV5.setDisable(true);    DH1.setDisable(true);
+        DH2.setDisable(true);    DH3.setDisable(true);
+        DH4.setDisable(true);    DH5.setDisable(true);
+        O1.setDisable(true);     O2.setDisable(true);
+        O3.setDisable(true);     O4.setDisable(true);
+        T1.setDisable(true);     T2.setDisable(true);
+        T3.setDisable(true);     T4.setDisable(true);
+    }
+
+    public void ReleaseDeck() {
+        idKoliynist.setDisable(false);   idNapluvy.setDisable(false);
+        idDamage.setDisable(false);      idVizd.setDisable(false);
+        SV1.setDisable(false);    SV2.setDisable(false);
+        SV3.setDisable(false);    SV4.setDisable(false);
+        SV5.setDisable(false);    DH1.setDisable(false);
+        DH2.setDisable(false);    DH3.setDisable(false);
+        DH4.setDisable(false);    DH5.setDisable(false);
+        O1.setDisable(false);     O2.setDisable(false);
+        O3.setDisable(false);     O4.setDisable(false);
+        T1.setDisable(false);     T2.setDisable(false);
+        T3.setDisable(false);     T4.setDisable(false);
+    }
+
+    public void blockSuper() {
+        ss1.setDisable(true);   ss2.setDisable(true);
+        ss3.setDisable(true);   ss4.setDisable(true);
+        ss5.setDisable(true);   ss6.setDisable(true);
+        ss7.setDisable(true);   ss8.setDisable(true);
+    }
+
+    public void ReleaseSuper() {
+        ss1.setDisable(false);   ss2.setDisable(false);
+        ss3.setDisable(false);   ss4.setDisable(false);
+        ss5.setDisable(false);   ss6.setDisable(false);
+        ss7.setDisable(false);   ss8.setDisable(false);
+    }
+
+    public void blockSupport() {
+        Rg1.setDisable(true);   Rg4.setDisable(true);
+        Rg2.setDisable(true);   Rg5.setDisable(true);
+        Rg3.setDisable(true);   Rg6.setDisable(true);
+        to1.setDisable(true);   to2.setDisable(true);
+        to3.setDisable(true);   to4.setDisable(true);
+        to5.setDisable(true);   to6.setDisable(true);
+        to7.setDisable(true);   f1.setDisable(true);
+        f2.setDisable(true);    f3.setDisable(true);
+        f4.setDisable(true);    f5.setDisable(true);
+    }
+
+    public void ReleaseSupport() {
+        Rg1.setDisable(false);   Rg4.setDisable(false);
+        Rg2.setDisable(false);   Rg5.setDisable(false);
+        Rg3.setDisable(false);   Rg6.setDisable(false);
+        to1.setDisable(false);   to2.setDisable(false);
+        to3.setDisable(false);   to4.setDisable(false);
+        to5.setDisable(false);   to6.setDisable(false);
+        to7.setDisable(false);   f1.setDisable(false);
+        f2.setDisable(false);    f3.setDisable(false);
+        f4.setDisable(false);    f5.setDisable(false);
+    }
+
+    public void blockRegulatoryStructure() {
+        RS1.setDisable(true);   RS2.setDisable(true);
+        RS3.setDisable(true);   RS4.setDisable(true);
+    }
+
+    public void ReleaseRegulatorystructure() {
+        RS1.setDisable(false);   RS2.setDisable(false);
+        RS3.setDisable(false);   RS4.setDisable(false);
+    }
 }

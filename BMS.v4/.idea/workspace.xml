@@ -3,7 +3,6 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="BMS.v4:jar" />
-      <artifact name="BMS.v4:jar2" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -58,8 +57,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -70,18 +69,20 @@
       <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bms/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5763" max-vertical-offset="5967">
-              <caret line="339" column="34" selection-start-line="339" selection-start-column="34" selection-end-line="339" selection-end-column="34" />
-              <folding />
+            <state vertical-scroll-proportion="-5.04" vertical-offset="2594" max-vertical-offset="5967">
+              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveExcel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bms/Resours/SaveExcel.java">
+      <file leaf-file-name="Excel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bms/Resours/Excel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3069" max-vertical-offset="3655">
-              <caret line="212" column="9" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5174" max-vertical-offset="5780">
+              <caret line="341" column="20" selection-start-line="341" selection-start-column="20" selection-end-line="341" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -90,27 +91,50 @@
       <file leaf-file-name="BD.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bms/Resours/BD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="5899">
-              <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+            <state vertical-scroll-proportion="-5.04" vertical-offset="1438" max-vertical-offset="5644">
+              <caret line="107" column="63" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="63" />
+              <folding>
+                <marker date="1402922208156" expanded="true" signature="906:948" placeholder="DELETE FROM ..." />
+                <marker date="1402922208156" expanded="true" signature="1592:1637" placeholder="SELECT bridg..bms_bridge..." />
+                <marker date="1402922208156" expanded="true" signature="5549:5588" placeholder="SELECT * FRO..SMETA..." />
+                <marker date="1402922208156" expanded="true" signature="6607:6651" placeholder="SELECT * FRO..bms_bridge..." />
+                <marker date="1402922208156" expanded="true" signature="7637:7706" placeholder="SELECT * FRO..bms_specification..." />
+                <marker date="1402922208156" expanded="true" signature="8668:8723" placeholder="SELECT * FRO..bms_rating..." />
+                <marker date="1402922208156" expanded="true" signature="10233:10285" placeholder="SELECT ratin..bms_rating..." />
+                <marker date="1402922208156" expanded="true" signature="10536:10578" placeholder="SELECT * FRO..bms_deck..." />
+                <marker date="1402922208156" expanded="true" signature="11350:11402" placeholder="SELECT ratin..bms_rating..." />
+                <marker date="1402922208156" expanded="true" signature="11653:11705" placeholder="SELECT * FRO..bms_superstructure..." />
+                <marker date="1402922208156" expanded="true" signature="12643:12695" placeholder="SELECT ratin..bms_rating..." />
+                <marker date="1402922208156" expanded="true" signature="12946:13004" placeholder="SELECT * FRO..bms_regulatory_structure..." />
+                <marker date="1402922208156" expanded="true" signature="13685:13737" placeholder="SELECT ratin..bms_rating..." />
+                <marker date="1402922208156" expanded="true" signature="13988:14033" placeholder="SELECT * FRO..bms_support..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Insetr.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bms/Resours/Insetr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3434">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#732#741#0" expanded="true" />
-                <element signature="e#795#803#0" expanded="true" />
-                <element signature="e#5516#5523#0" expanded="true" />
-                <marker date="1402879803170" expanded="true" signature="906:948" placeholder="DELETE FROM ..." />
-                <marker date="1402879803170" expanded="true" signature="1625:1670" placeholder="SELECT bridg..bms_bridge..." />
-                <marker date="1402879803170" expanded="true" signature="5582:5621" placeholder="SELECT * FRO..SMETA..." />
-                <marker date="1402879803170" expanded="true" signature="6640:6684" placeholder="SELECT * FRO..bms_bridge..." />
-                <marker date="1402879803170" expanded="true" signature="7670:7739" placeholder="SELECT * FRO..bms_specification..." />
-                <marker date="1402879803170" expanded="true" signature="8701:8756" placeholder="SELECT * FRO..bms_rating..." />
-                <marker date="1402879803170" expanded="true" signature="10266:10318" placeholder="SELECT ratin..bms_rating..." />
-                <marker date="1402879803170" expanded="true" signature="10569:10611" placeholder="SELECT * FRO..bms_deck..." />
-                <marker date="1402879803170" expanded="true" signature="11383:11435" placeholder="SELECT ratin..bms_rating..." />
-                <marker date="1402879803170" expanded="true" signature="11686:11738" placeholder="SELECT * FRO..bms_superstructure..." />
-                <marker date="1402879803170" expanded="true" signature="12676:12728" placeholder="SELECT ratin..bms_rating..." />
-                <marker date="1402879803170" expanded="true" signature="12979:13037" placeholder="SELECT * FRO..bms_regulatory_structure..." />
-                <marker date="1402879803170" expanded="true" signature="13718:13770" placeholder="SELECT ratin..bms_rating..." />
-                <marker date="1402879803170" expanded="true" signature="14021:14066" placeholder="SELECT * FRO..bms_support..." />
+                <marker date="1402879867512" expanded="true" signature="459:790" placeholder="INSERT INTO ..." />
+                <marker date="1402879867512" expanded="true" signature="1681:1757" placeholder="SELECT bms_b..bms_bridge..." />
+                <marker date="1402879867512" expanded="true" signature="2080:2404" placeholder="INSERT INTO ..." />
+                <marker date="1402879867512" expanded="true" signature="3420:3496" placeholder="SELECT bms_b..bms_bridge..." />
+                <marker date="1402879867512" expanded="true" signature="3837:4122" placeholder="INSERT INTO ..." />
+                <marker date="1402879867512" expanded="true" signature="5083:5159" placeholder="SELECT bms_b..bms_bridge..." />
+                <marker date="1402879867512" expanded="true" signature="5468:5747" placeholder="INSERT INTO ..." />
+                <marker date="1402879867512" expanded="true" signature="6569:6655" placeholder="SELECT bms_r..bms_rating..." />
+                <marker date="1402879867512" expanded="true" signature="6964:7118" placeholder="INSERT INTO ..." />
+                <marker date="1402879867512" expanded="true" signature="7628:7714" placeholder="SELECT bms_r..bms_rating..." />
+                <marker date="1402879867512" expanded="true" signature="8023:8156" placeholder="INSERT INTO ..." />
+                <marker date="1402879867512" expanded="true" signature="8648:8734" placeholder="SELECT bms_r..bms_rating..." />
+                <marker date="1402879867512" expanded="true" signature="9043:9262" placeholder="INSERT INTO ..." />
+                <marker date="1402879867512" expanded="true" signature="10069:10155" placeholder="SELECT bms_r..bms_rating..." />
+                <marker date="1402879867512" expanded="true" signature="10464:10596" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -119,8 +143,28 @@
       <file leaf-file-name="CreateNewObject.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bms/Resours/CreateNewObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39078498" vertical-offset="6265" max-vertical-offset="9248">
-              <caret line="398" column="48" selection-start-line="398" selection-start-column="48" selection-end-line="398" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.57508534" vertical-offset="7704" max-vertical-offset="9231">
+              <caret line="489" column="53" selection-start-line="489" selection-start-column="33" selection-end-line="489" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bridge.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bms/Bridge/Bridge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2355" max-vertical-offset="2941">
+              <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BridgePasport.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bms/Bridge/BridgePasport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -161,13 +205,13 @@
         <option value="$PROJECT_DIR$/src/bms/FXML/main.fxml" />
         <option value="$PROJECT_DIR$/src/bms/FXML/about.fxml" />
         <option value="$PROJECT_DIR$/src/bms/About.java" />
-        <option value="$PROJECT_DIR$/src/bms/Controller.java" />
         <option value="$PROJECT_DIR$/src/bms/Bridge/SMETA.java" />
-        <option value="$PROJECT_DIR$/src/bms/Resours/BD.java" />
         <option value="$PROJECT_DIR$/src/bms/Resours/Excel.java" />
         <option value="$PROJECT_DIR$/src/bms/Resours/Insetr.java" />
         <option value="$PROJECT_DIR$/src/bms/Resours/mageSmet.java" />
         <option value="$PROJECT_DIR$/src/bms/Resours/SaveExcel.java" />
+        <option value="$PROJECT_DIR$/src/bms/Resours/BD.java" />
+        <option value="$PROJECT_DIR$/src/bms/Controller.java" />
         <option value="$PROJECT_DIR$/src/bms/Resours/CreateNewObject.java" />
       </list>
     </option>
@@ -208,6 +252,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,7 +349,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -617,11 +661,12 @@
       <workItem from="1402807106968" duration="609000" />
       <workItem from="1402826663378" duration="42491000" />
       <workItem from="1402892824966" duration="2466000" />
+      <workItem from="1402919459813" duration="7096000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143289000" />
+    <option name="totallyTimeSpent" value="150385000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -660,6 +705,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -673,7 +719,6 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -681,10 +726,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -702,10 +747,10 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47875816" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -747,7 +792,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5814">
           <caret line="112" column="34" selection-start-line="112" selection-start-column="34" selection-end-line="112" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -762,9 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="459">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,7 +830,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5644">
           <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -808,7 +854,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2210" max-vertical-offset="5627">
           <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -824,7 +872,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2210" max-vertical-offset="5627">
           <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -939,23 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="663">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Bridge/Bridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3915493" vertical-offset="2536" max-vertical-offset="2941">
-          <caret line="141" column="29" selection-start-line="141" selection-start-column="29" selection-end-line="141" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Bridge/BridgePasport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13043478" vertical-offset="173" max-vertical-offset="578">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7377892" vertical-offset="410" max-vertical-offset="799">
           <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,9 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.095744684" vertical-offset="542" max-vertical-offset="918">
           <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1040,24 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Resours/Excel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7287234" vertical-offset="5404" max-vertical-offset="5780">
-          <caret line="347" column="1" selection-start-line="347" selection-start-column="1" selection-end-line="347" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Resours/Insetr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7287234" vertical-offset="3058" max-vertical-offset="3434">
-          <caret line="196" column="1" selection-start-line="196" selection-start-column="1" selection-end-line="196" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bms/Resours/Graf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3590426" vertical-offset="1501" max-vertical-offset="1887">
@@ -1066,21 +1077,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5763" max-vertical-offset="5967">
-          <caret line="339" column="34" selection-start-line="339" selection-start-column="34" selection-end-line="339" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bms/Resours/mageSmet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3449" max-vertical-offset="4131">
           <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,33 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bms/Resours/BD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="5899">
-          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#732#741#0" expanded="true" />
-            <element signature="e#795#803#0" expanded="true" />
-            <element signature="e#5516#5523#0" expanded="true" />
-            <marker date="1402879803170" expanded="true" signature="906:948" placeholder="DELETE FROM ..." />
-            <marker date="1402879803170" expanded="true" signature="1625:1670" placeholder="SELECT bridg..bms_bridge..." />
-            <marker date="1402879803170" expanded="true" signature="5582:5621" placeholder="SELECT * FRO..SMETA..." />
-            <marker date="1402879803170" expanded="true" signature="6640:6684" placeholder="SELECT * FRO..bms_bridge..." />
-            <marker date="1402879803170" expanded="true" signature="7670:7739" placeholder="SELECT * FRO..bms_specification..." />
-            <marker date="1402879803170" expanded="true" signature="8701:8756" placeholder="SELECT * FRO..bms_rating..." />
-            <marker date="1402879803170" expanded="true" signature="10266:10318" placeholder="SELECT ratin..bms_rating..." />
-            <marker date="1402879803170" expanded="true" signature="10569:10611" placeholder="SELECT * FRO..bms_deck..." />
-            <marker date="1402879803170" expanded="true" signature="11383:11435" placeholder="SELECT ratin..bms_rating..." />
-            <marker date="1402879803170" expanded="true" signature="11686:11738" placeholder="SELECT * FRO..bms_superstructure..." />
-            <marker date="1402879803170" expanded="true" signature="12676:12728" placeholder="SELECT ratin..bms_rating..." />
-            <marker date="1402879803170" expanded="true" signature="12979:13037" placeholder="SELECT * FRO..bms_regulatory_structure..." />
-            <marker date="1402879803170" expanded="true" signature="13718:13770" placeholder="SELECT ratin..bms_rating..." />
-            <marker date="1402879803170" expanded="true" signature="14021:14066" placeholder="SELECT * FRO..bms_support..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/11.uml">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1126,19 +1099,19 @@
           <OriginalElement />
           <nodes>
             <node x="" y="">bms.Bridge.Rating</node>
-            <node x="" y="">bms.Bridge.BridgePasport</node>
-            <node x="" y="">bms.Bridge.Specific</node>
-            <node x="" y="">bms.Bridge.Deck</node>
-            <node x="" y="">bms.Bridge.Support</node>
             <node x="" y="">bms.Bridge.RegulatoryStructure</node>
             <node x="" y="">bms.Controller</node>
+            <node x="" y="">bms.Bridge.BridgePasport</node>
+            <node x="" y="">bms.Bridge.Specific</node>
             <node x="" y="">bms.Bridge.SMETA</node>
             <node x="" y="">bms.Bridge.SuperStructure</node>
+            <node x="" y="">bms.Bridge.Deck</node>
             <node x="" y="">bms.Bridge.Bridge</node>
+            <node x="" y="">bms.Bridge.Support</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="48.000000000000114" y="359.6428571428571" />
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="48.0" y="360.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -1174,7 +1147,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="1050.5" y="1396.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="1051.0" y="1397.0" />
           <SelectedNodes />
           <Categories>
             <Category>Methods</Category>
@@ -1211,7 +1184,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="732.2499999999995" y="320.7499999999998" />
+          <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="732.0" y="321.0" />
           <SelectedNodes />
           <Categories>
             <Category>Methods</Category>
@@ -1248,7 +1221,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="758.5" y="1251.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="759.0" y="1252.0" />
           <SelectedNodes />
           <Categories>
             <Category>Methods</Category>
@@ -1258,10 +1231,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Resours/Insetr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3434">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1402879867512" expanded="true" signature="459:790" placeholder="INSERT INTO ..." />
+            <marker date="1402879867512" expanded="true" signature="1681:1757" placeholder="SELECT bms_b..bms_bridge..." />
+            <marker date="1402879867512" expanded="true" signature="2080:2404" placeholder="INSERT INTO ..." />
+            <marker date="1402879867512" expanded="true" signature="3420:3496" placeholder="SELECT bms_b..bms_bridge..." />
+            <marker date="1402879867512" expanded="true" signature="3837:4122" placeholder="INSERT INTO ..." />
+            <marker date="1402879867512" expanded="true" signature="5083:5159" placeholder="SELECT bms_b..bms_bridge..." />
+            <marker date="1402879867512" expanded="true" signature="5468:5747" placeholder="INSERT INTO ..." />
+            <marker date="1402879867512" expanded="true" signature="6569:6655" placeholder="SELECT bms_r..bms_rating..." />
+            <marker date="1402879867512" expanded="true" signature="6964:7118" placeholder="INSERT INTO ..." />
+            <marker date="1402879867512" expanded="true" signature="7628:7714" placeholder="SELECT bms_r..bms_rating..." />
+            <marker date="1402879867512" expanded="true" signature="8023:8156" placeholder="INSERT INTO ..." />
+            <marker date="1402879867512" expanded="true" signature="8648:8734" placeholder="SELECT bms_r..bms_rating..." />
+            <marker date="1402879867512" expanded="true" signature="9043:9262" placeholder="INSERT INTO ..." />
+            <marker date="1402879867512" expanded="true" signature="10069:10155" placeholder="SELECT bms_r..bms_rating..." />
+            <marker date="1402879867512" expanded="true" signature="10464:10596" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Bridge/BridgePasport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Bridge/Bridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2355" max-vertical-offset="2941">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Resours/Excel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5174" max-vertical-offset="5780">
+          <caret line="341" column="20" selection-start-line="341" selection-start-column="20" selection-end-line="341" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Resours/BD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.04" vertical-offset="1438" max-vertical-offset="5644">
+          <caret line="107" column="63" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="63" />
+          <folding>
+            <marker date="1402922208156" expanded="true" signature="906:948" placeholder="DELETE FROM ..." />
+            <marker date="1402922208156" expanded="true" signature="1592:1637" placeholder="SELECT bridg..bms_bridge..." />
+            <marker date="1402922208156" expanded="true" signature="5549:5588" placeholder="SELECT * FRO..SMETA..." />
+            <marker date="1402922208156" expanded="true" signature="6607:6651" placeholder="SELECT * FRO..bms_bridge..." />
+            <marker date="1402922208156" expanded="true" signature="7637:7706" placeholder="SELECT * FRO..bms_specification..." />
+            <marker date="1402922208156" expanded="true" signature="8668:8723" placeholder="SELECT * FRO..bms_rating..." />
+            <marker date="1402922208156" expanded="true" signature="10233:10285" placeholder="SELECT ratin..bms_rating..." />
+            <marker date="1402922208156" expanded="true" signature="10536:10578" placeholder="SELECT * FRO..bms_deck..." />
+            <marker date="1402922208156" expanded="true" signature="11350:11402" placeholder="SELECT ratin..bms_rating..." />
+            <marker date="1402922208156" expanded="true" signature="11653:11705" placeholder="SELECT * FRO..bms_superstructure..." />
+            <marker date="1402922208156" expanded="true" signature="12643:12695" placeholder="SELECT ratin..bms_rating..." />
+            <marker date="1402922208156" expanded="true" signature="12946:13004" placeholder="SELECT * FRO..bms_regulatory_structure..." />
+            <marker date="1402922208156" expanded="true" signature="13685:13737" placeholder="SELECT ratin..bms_rating..." />
+            <marker date="1402922208156" expanded="true" signature="13988:14033" placeholder="SELECT * FRO..bms_support..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bms/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.04" vertical-offset="2594" max-vertical-offset="5967">
+          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bms/Resours/CreateNewObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39078498" vertical-offset="6265" max-vertical-offset="9248">
-          <caret line="398" column="48" selection-start-line="398" selection-start-column="48" selection-end-line="398" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.57508534" vertical-offset="7704" max-vertical-offset="9231">
+          <caret line="489" column="53" selection-start-line="489" selection-start-column="33" selection-end-line="489" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1271,7 +1326,13 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="javaee-facet-resources" />
+              <type id="jpa-descriptors" />
+              <type id="artifact" />
+            </show-content>
+          </artifact-editor>
           <last-edited>BMS.v4:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">

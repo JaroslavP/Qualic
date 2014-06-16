@@ -43,7 +43,6 @@ public class BD {
             controller.idSaveXLS.setDisable(true);
         } catch (Exception e) {
             e.printStackTrace();
-            //MessageBox.show();
         }
     }
 

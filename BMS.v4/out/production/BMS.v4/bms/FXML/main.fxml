@@ -9,13 +9,13 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.Controller">
 <children><MenuBar prefWidth="1024.0">
   <menus>
-    <Menu mnemonicParsing="false" text="Об'кт">
+    <Menu mnemonicParsing="false" text="Об'єкт">
       <items>
         <MenuItem fx:id="idNewBridge" mnemonicParsing="false" onAction="#createNewObject" text="Новий" />
 <MenuItem fx:id="idLoadXLS" mnemonicParsing="false" onAction="#LoadXLS" text="Завантажити *.xls" />
 <MenuItem fx:id="idSaveXLS" mnemonicParsing="false" onAction="#SaveXLS" text="Зберегти  *.xls" />
 <MenuItem fx:id="idSaveBD" mnemonicParsing="false" onAction="#SaveBD" text="Зберегти БД" />
-<MenuItem fx:id="idDeleteRecord" mnemonicParsing="false" onAction="#DeleteBD" text="Видалити запис" />
+<MenuItem fx:id="idDeleteRecord" mnemonicParsing="false" onAction="#DeleteBD" text="Видалити запис з БД" />
 <MenuItem mnemonicParsing="false" onAction="#out" text="Вихід" />
       </items>
     </Menu>
@@ -25,7 +25,7 @@
 <MenuItem fx:id="idSmeta" mnemonicParsing="false" onAction="#makeSmeta" text="СМЕТА" />
 </items>
 </Menu>
-    <Menu mnemonicParsing="false" text="База Днаних">
+    <Menu mnemonicParsing="false" text="База Даних">
       <items>
         <MenuItem fx:id="idConn" mnemonicParsing="false" onAction="#connectDB" text="Підключитись" />
 <MenuItem fx:id="idDiscon" mnemonicParsing="false" onAction="#disconnectDB" text="Відключитись" />

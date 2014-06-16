@@ -236,8 +236,10 @@ public class Controller implements Initializable{
         idrp.setText(String.valueOf(2014));
         try {
             idPassportPicture.setImage(new Image(bigBridge.getBridgePasport().imgPath));
+            idNoPic.setText("");
         } catch (Exception ignored) {
             idNoPic.setText("Зображення відсутнє !");
+            idPassportPicture.setImage(null);
         }
         // SPECIFICATION
         idlen.setText(bigBridge.getSpecific().length);
@@ -268,8 +270,10 @@ public class Controller implements Initializable{
         idload.setText(String.valueOf(bigBridge.getSpecific().load));
         try {
             idSpecificationShema.setImage(new Image(bigBridge.getSpecific().pathShema));
+            idNoShema.setText("");
         } catch (Exception ignored) {
             idNoShema.setText("Зображення відсутнє !");
+            idSpecificationShema.setImage(null);
         }
         // CATEGORY
         String str = "";
@@ -316,7 +320,7 @@ public class Controller implements Initializable{
             idSS5.setText("Розірванні шви зварювання " + Math.rint(bigBridge.getSuperStructure().disSeam*100)/100 + "%");
             idSS6.setText("Місцеві погнутості балок " + Math.rint(bigBridge.getSuperStructure().defBeam*100)/100 + "%");
             idSS7.setText("Залишкові прогини балок " + Math.rint(bigBridge.getSuperStructure().resBeam*100)/100 + "%");
-            idSS8.setText("Трищини в болтах/гайках " + Math.rint(bigBridge.getSuperStructure().crackBolt*100)/100 + "%");
+            idSS8.setText("Тріщини в болтах/гайках " + Math.rint(bigBridge.getSuperStructure().crackBolt*100)/100 + "%");
         idSuppInfo.setText("Оцінка опори " + Math.rint(bigBridge.getRating().rSupport*100)/100 + "%");
             idS1.setText("Ригель " +  Math.rint(bigBridge.getSupport().header*100)/100 + "%");
             idS2.setText("Тіло опори " +  Math.rint(bigBridge.getSupport().bodySupport*100)/100 + "%");
