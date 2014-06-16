@@ -1,6 +1,7 @@
 package bms;
 
 import bms.Bridge.Bridge;
+import bms.Resours.*;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -326,5 +327,20 @@ public class Controller implements Initializable{
             idRS3.setText("Зниження швидкості руху " +  Math.rint(bigBridge.getRegulatoryStructure().speedLimit*100)/100 + "%");
             idRS4.setText("Втрати конусом об'єму " +  Math.rint(bigBridge.getRegulatoryStructure().cone*100)/100 + "%");
         categiryForGraf = bigBridge;
+    }
+
+
+    public void showme() {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("FXML/about.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Stage stage = new Stage();
+        stage.setTitle("About");
+        stage.setScene(new Scene(root, 478, 282));
+        stage.setResizable(false);
+        stage.show();
     }
 }

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="idAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.mageSmet">
+<AnchorPane fx:id="idAP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bms.Resours.mageSmet">
 <children><Pane prefHeight="27.0" prefWidth="900.0" style="-fx-background-color: #DADADA;" AnchorPane.topAnchor="0.0">
 <children><Button fx:id="idFindCost" layoutX="107.0" layoutY="1.0" mnemonicParsing="false" onAction="#findCost" prefHeight="25.0" prefWidth="88.0" text="Розрахувати" /><Button fx:id="idCloseSmeta" layoutX="195.0" layoutY="1.0" mnemonicParsing="false" onAction="#SmetaClose" prefHeight="25.0" prefWidth="88.0" text="Закрити" /><Label fx:id="idTotal" layoutX="298.0" layoutY="4.0" prefHeight="18.0" prefWidth="134.0">
 <font>
